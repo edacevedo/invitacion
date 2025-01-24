@@ -6,20 +6,25 @@ import Button from 'react-bootstrap/Button';
 
 // import logo from './resources/img/logo-boda.png'
 import homeImage from './resources/img/home-image.jpeg'
+import verticalFlowers from './resources/img/vertical-flowers.PNG'
+import cornerFlowers from './resources/img/corner-flowers.PNG'
 
 function App() {
   return (
     <Container>
 
-      <Row className="justify-content-center pt-3">
+      <div className='vertical-flowers'>
+          <img  className src={verticalFlowers} alt="" />
+      </div>
+      <div className='corner-flowers'>
+        <img  className src={cornerFlowers} alt="" />
+      </div>
+
+      <Row className="justify-content-center pt-5">
         <Col xs="auto"><h6 className='text-center'>AMAR NO ES MIRARSE EL UNO AL OTRO, ES MIRAR JUNTOS EN LA MISMA DIRECCIÓN</h6></Col>
       </Row>
 
-      {/* <Row className="justify-content-center">
-        <Col xs={8} sm={4} className='justify-content-center'>
-          <img src={logo} alt="logo" className='w-100' />
-        </Col>
-      </Row> */}
+
       <Row className="justify-content-start pt-5">
         <Col xs={6}><h1 className='mea-culpa-regular text-end'>Luisa</h1></Col>
       </Row>

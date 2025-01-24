@@ -4,6 +4,8 @@
   background-attachment: fixed;
   min-height: 100vh;
   padding-bottom: 5rem;
+  background-color: #f1f2f4;
+  color: #51545c;
 }
 
 h1 {
@@ -23,4 +25,26 @@ h2 {
   font-family: "Mea Culpa", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.vertical-flowers {
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  min-width: 20vw;
+}
+
+.vertical-flowers img {
+  max-width: 20vw;
+}
+
+.corner-flowers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 20vw;
+}
+
+.corner-flowers img {
+  max-width: 20vw;
 }
