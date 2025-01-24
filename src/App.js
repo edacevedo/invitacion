@@ -42,7 +42,7 @@ function App() {
 
       <Row className="justify-content-center pt-5">
         <Col  >
-          <p className='text-center'>Con nuestro amor y la bendición de Dios tenemos el honor de invitarte a nuestra boda.</p>
+          <p className='text-center'>CON NUESTRO AMOR Y LA BENDICIÓN DE DIOS TENEMOS EL HONOR DE INVITARTE A NUESTRA BODA</p>
         </Col>
       </Row>
 
@@ -59,9 +59,9 @@ function App() {
         <Col xs="auto" className='justify-content-center'>CEREMONIA & RECEPCIÓN</Col>
       </Row>
       <Row className="justify-content-center">
-        <Col xs="auto" className='justify-content-center'>Hacienda la unión, Jamundí, Valle del Cauca, CO.</Col>
+        <Col xs="auto" className='justify-content-center'><p className='text-center'>HACIENDA LA UNIÓN, JAMUNDÍ, VALLE DEL CAUCA, CO.</p></Col>
       </Row>
-      <Row className="justify-content-center pt-3">
+      <Row className="justify-content-center pt-1">
         <Col xs="auto" className='justify-content-center'>
         <Button variant="outline-primary" onClick={()=>{window.open('https://maps.app.goo.gl/2iieVtKoAbpxtpTi9')}}>Ver ubicación</Button>
         </Col>
@@ -69,18 +69,18 @@ function App() {
 
 
       <Row className="justify-content-center pt-5">
-        <Col xs="auto" className='justify-content-center'>Hemos reservado</Col>
+        <Col xs="auto" className='justify-content-center'>HEMOS RESERVADO</Col>
       </Row>
       <Row className="justify-content-center">
         <Col xs="auto" className='justify-content-center'><h3 className='text-center'>1</h3></Col>
       </Row>
       <Row className="justify-content-center">
-        <Col xs="auto" className='justify-content-center'>Lugar en su honor</Col>
-      </Row>
-      <Row className="justify-content-center pt-5">
-        <Col xs="auto" className='justify-content-center'><p className='text-center'>Agradecemos que confirme su asistencia antes del 29 de Marzo.</p></Col>
+        <Col xs="auto" className='justify-content-center'>LUGAR EN SU HONOR</Col>
       </Row>
       <Row className="justify-content-center pt-3">
+        <Col xs="auto" className='justify-content-center'><p className='text-center'>AGRADECEMOS CONFIRME SU ASISTENCIA ANTES DEL 29 DE MARZO</p></Col>
+      </Row>
+      <Row className="justify-content-center pt-1">
         <Col xs="auto" className='justify-content-center'>
           <Button variant="outline-primary" onClick={()=>{window.open('https://maps.app.goo.gl/2iieVtKoAbpxtpTi9')}}>
             Confirmar asistencia
@@ -93,19 +93,19 @@ function App() {
         <Col xs="auto" className='justify-content-center'><h5>CÓDIGO DE VESTIMENTA</h5></Col>
       </Row>
       <Row className="justify-content-center pt-1">
-        <Col xs="auto" className='justify-content-center'><p className='text-center'>Formal</p></Col>
+        <Col xs="auto" className='justify-content-center'><p className='text-center'>FORMAL</p></Col>
       </Row>
 
       <Row className="justify-content-center pt-5">
         <Col xs="auto" className='justify-content-center'><h5>SIN NIÑOS</h5></Col>
       </Row>
       <Row className="justify-content-center pt-1">
-        <Col xs="auto" className='justify-content-center'><p className='text-center'>Aunque nos gustan los niños esta es una celebración para adultos</p></Col>
+        <Col xs="auto" className='justify-content-center'><p className='text-center'>AUNQUE NOS GUSTAN LOS NIÑOS ESTA ES UNA CELEBRACIÓN PARA ADULTOS</p></Col>
       </Row>
 
 
       <Row className="justify-content-center pt-5">
-        <Col xs="auto" className='justify-content-center'><p className='text-center'>Esperamos contar con su presencia</p></Col>
+        <Col xs="auto" className='justify-content-center'><p className='text-center'>ESPERAMOS CONTAR CON SU PRESENCIA</p></Col>
       </Row>
       <Row className="justify-content-center pt-3">
         <Col xs="auto" className='justify-content-center'><h2 className='mea-culpa-regular'>¡Muchas gracias!</h2></Col>
