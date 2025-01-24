@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 import logo from './resources/img/logo-boda.png'
-import homeImage from './resources/img/home-image.JPG'
+import homeImage from './resources/img/home-image.jpeg'
 
 function App() {
   return (
@@ -59,6 +59,13 @@ function App() {
       </Row>
       <Row className="justify-content-center">
         <Col xs="auto" className='justify-content-center'>Lugar en su honor</Col>
+      </Row>
+      <Row className="justify-content-center pt-3">
+        <Col xs="auto" className='justify-content-center'>
+          <Button variant="outline-primary" onClick={()=>{window.open('https://maps.app.goo.gl/2iieVtKoAbpxtpTi9')}}>
+            Confirmar asistencia
+            </Button>
+        </Col>
       </Row>
       
       
