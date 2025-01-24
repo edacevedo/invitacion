@@ -10,34 +10,41 @@ import homeImage from './resources/img/home-image.jpeg'
 function App() {
   return (
     <Container>
+
       <Row className="justify-content-center pt-3">
         <Col xs="auto"><h1 className='text-center'>Fuimos hechos para estar juntos...</h1></Col>
       </Row>
+
       <Row className="justify-content-center">
         <Col xs={8} sm={4} className='justify-content-center'>
           <img src={logo} alt="logo" className='w-100' />
         </Col>
       </Row>
+
       <Row className="justify-content-center pt-1">
-        <Col xs="auto"><h2>¡NOS CASAMOS!</h2></Col>
+        <Col xs="auto"><h4>¡NOS CASAMOS!</h4></Col>
       </Row>
+
       <Row className="justify-content-center pt-3">
         <Col xs={12} sm={8} className='justify-content-center'>
           <img src={homeImage} alt="logo" className='w-100' />
         </Col>
       </Row>
+
       <Row className="justify-content-center pt-5">
         <Col  >
           <p className='text-center'>Con nuestro amor y la bendición de Dios tenemos el honor de invitarte a nuestra boda.</p>
         </Col>
       </Row>
 
+
       <Row className="justify-content-center pt-5">
         <Col xs="auto" className='justify-content-center'><h2>SÁBADO 28 DE JUNIO DE 2025</h2></Col>
       </Row>
 
+
       <Row className="justify-content-center pt-5">
-        <Col xs="auto" className='justify-content-center'>5:30 PM</Col>
+        <Col xs="auto" className='justify-content-center'><h4 className='text-center'>5:30 PM</h4></Col>
       </Row>
       <Row className="justify-content-center">
         <Col xs="auto" className='justify-content-center'>CEREMONIA & RECEPCIÓN</Col>
@@ -51,6 +58,7 @@ function App() {
         </Col>
       </Row>
 
+
       <Row className="justify-content-center pt-5">
         <Col xs="auto" className='justify-content-center'>Hemos reservado</Col>
       </Row>
@@ -60,6 +68,9 @@ function App() {
       <Row className="justify-content-center">
         <Col xs="auto" className='justify-content-center'>Lugar en su honor</Col>
       </Row>
+      <Row className="justify-content-center pt-5">
+        <Col xs="auto" className='justify-content-center'><p className='text-center'>Agradecemos que confirme su asistencia antes del 29 de Marzo.</p></Col>
+      </Row>
       <Row className="justify-content-center pt-3">
         <Col xs="auto" className='justify-content-center'>
           <Button variant="outline-primary" onClick={()=>{window.open('https://maps.app.goo.gl/2iieVtKoAbpxtpTi9')}}>
@@ -67,6 +78,31 @@ function App() {
             </Button>
         </Col>
       </Row>
+
+
+      <Row className="justify-content-center pt-5">
+        <Col xs="auto" className='justify-content-center'><h5>CÓDIGO DE VESTIMENTA</h5></Col>
+      </Row>
+      <Row className="justify-content-center pt-1">
+        <Col xs="auto" className='justify-content-center'><p className='text-center'>Formal</p></Col>
+      </Row>
+
+      <Row className="justify-content-center pt-5">
+        <Col xs="auto" className='justify-content-center'><h5>SIN NIÑOS</h5></Col>
+      </Row>
+      <Row className="justify-content-center pt-1">
+        <Col xs="auto" className='justify-content-center'><p className='text-center'>Aunque nos gustan los niños esta es una celebración para adultos</p></Col>
+      </Row>
+
+
+      <Row className="justify-content-center pt-5">
+        <Col xs="auto" className='justify-content-center'><p className='text-center'>Esperamos contar con su presencia</p></Col>
+      </Row>
+      <Row className="justify-content-center pt-3">
+        <Col xs="auto" className='justify-content-center'><h3>¡Muchas gracias!</h3></Col>
+      </Row>
+      
+      
       
       
     </Container>);
