@@ -1,6 +1,23 @@
 #root {
-  /* background-image: url(./resources/img/bg-invitacion.webp); */
+  /* background-image: url(./resources/img/bg.jpeg); */
   background-size: cover;
+  background-attachment: fixed;
   min-height: 100vh;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+}
+
+h1 {
+  font-size: 3rem !important;
+}
+
+.monsieur-regular {
+  font-family: "Monsieur La Doulaise", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mea-culpa-regular {
+  font-family: "Mea Culpa", serif;
+  font-weight: 400;
+  font-style: normal;
 }

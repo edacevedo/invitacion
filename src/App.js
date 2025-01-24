@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
-import logo from './resources/img/logo-boda.png'
+// import logo from './resources/img/logo-boda.png'
 import homeImage from './resources/img/home-image.jpeg'
 
 function App() {
@@ -12,13 +12,22 @@ function App() {
     <Container>
 
       <Row className="justify-content-center pt-3">
-        <Col xs="auto"><h1 className='text-center'>Fuimos hechos para estar juntos...</h1></Col>
+        <Col xs="auto"><h6 className='text-center'>AMAR NO ES MIRARSE EL UNO AL OTRO, ES MIRAR JUNTOS EN LA MISMA DIRECCIÓN</h6></Col>
       </Row>
 
-      <Row className="justify-content-center">
+      {/* <Row className="justify-content-center">
         <Col xs={8} sm={4} className='justify-content-center'>
           <img src={logo} alt="logo" className='w-100' />
         </Col>
+      </Row> */}
+      <Row className="justify-content-start pt-5">
+        <Col xs={6}><h1 className='mea-culpa-regular text-end'>Luisa</h1></Col>
+      </Row>
+      <Row className="justify-content-center">
+        <Col xs="auto"><h1 className='mea-culpa-regular text-center'>&</h1></Col>
+      </Row>
+      <Row className="justify-content-end pb-5">
+        <Col xs={6}><h1 className='mea-culpa-regular text-start'>Edinson</h1></Col>
       </Row>
 
       <Row className="justify-content-center pt-1">
@@ -99,7 +108,7 @@ function App() {
         <Col xs="auto" className='justify-content-center'><p className='text-center'>Esperamos contar con su presencia</p></Col>
       </Row>
       <Row className="justify-content-center pt-3">
-        <Col xs="auto" className='justify-content-center'><h3>¡Muchas gracias!</h3></Col>
+        <Col xs="auto" className='justify-content-center'><h2 className='mea-culpa-regular'>¡Muchas gracias!</h2></Col>
       </Row>
       
       
