@@ -36,7 +36,7 @@ function App() {
         </Row>
 
         <Row className="justify-content-center pt-5">
-          <Col xs="auto"><h6 className='text-center'>AMAR NO ES MIRARSE EL UNO AL OTRO, ES MIRAR JUNTOS EN LA MISMA DIRECCIÓN</h6></Col>
+          <Col xs="auto"><h6 className='text-center'>Amar no es mirarse el uno al otro, es mirar juntos en la misma dirección</h6></Col>
         </Row>
 
         <Row className="justify-content-center pt-1">
@@ -52,7 +52,7 @@ function App() {
 
         <Row className="justify-content-center pt-5">
           <Col  >
-            <p className='text-center'>CON NUESTRO AMOR Y LA BENDICIÓN DE DIOS TENEMOS EL HONOR DE INVITARTE A NUESTRA BODA</p>
+            <p className='text-center'>Con nuestro amor y la bendición de dios tenemos el honor de invitarte a nuestra boda</p>
           </Col>
         </Row>
 
@@ -63,13 +63,13 @@ function App() {
 
 
         <Row className="justify-content-center pt-5">
-          <Col xs="auto" className='justify-content-center'><h4 className='text-center'>5:30 PM</h4></Col>
+          <Col xs="auto" className='justify-content-center'><h4 className='text-center'>CEREMONIA & RECEPCIÓN</h4></Col>
         </Row>
         <Row className="justify-content-center">
-          <Col xs="auto" className='justify-content-center'>CEREMONIA & RECEPCIÓN</Col>
+          <Col xs="auto" className='justify-content-center'>5:30 PM</Col>
         </Row>
         <Row className="justify-content-center">
-          <Col xs="auto" className='justify-content-center'><p className='text-center'>HACIENDA LA UNIÓN, JAMUNDÍ, VALLE DEL CAUCA, CO.</p></Col>
+          <Col xs="auto" className='justify-content-center'><p className='text-center'>Hacienda la unión, jamundí, valle del cauca, CO</p></Col>
         </Row>
         <Row className="justify-content-center pt-1">
           <Col xs="auto" className='justify-content-center'>
@@ -79,16 +79,16 @@ function App() {
 
 
         <Row className="justify-content-center pt-5">
-          <Col xs="auto" className='justify-content-center'>HEMOS RESERVADO</Col>
+          <Col xs="auto" className='justify-content-center'>Hemos reservado</Col>
         </Row>
         <Row className="justify-content-center">
           <Col xs="auto" className='justify-content-center'><h3 className='text-center'>1</h3></Col>
         </Row>
         <Row className="justify-content-center">
-          <Col xs="auto" className='justify-content-center'>LUGAR EN SU HONOR</Col>
+          <Col xs="auto" className='justify-content-center'>Lugar en su honer</Col>
         </Row>
         <Row className="justify-content-center pt-3">
-          <Col xs="auto" className='justify-content-center'><p className='text-center'>AGRADECEMOS CONFIRME SU ASISTENCIA ANTES DEL 29 DE MARZO</p></Col>
+          <Col xs="auto" className='justify-content-center'><p className='text-center'>Agradecemos confirme su asistencia antes del 29 de marzo</p></Col>
         </Row>
         <Row className="justify-content-center pt-1">
           <Col xs="auto" className='justify-content-center'>
@@ -103,19 +103,19 @@ function App() {
           <Col xs="auto" className='justify-content-center'><h5>CÓDIGO DE VESTIMENTA</h5></Col>
         </Row>
         <Row className="justify-content-center pt-1">
-          <Col xs="auto" className='justify-content-center'><p className='text-center'>FORMAL</p></Col>
+          <Col xs="auto" className='justify-content-center'><p className='text-center'>Formal</p></Col>
         </Row>
 
         <Row className="justify-content-center pt-5">
-          <Col xs="auto" className='justify-content-center'><h5>SIN NIÑOS</h5></Col>
+          <Col xs="auto" className='justify-content-center'><h5>SOLO ADULTOS</h5></Col>
         </Row>
         <Row className="justify-content-center pt-1">
-          <Col xs="auto" className='justify-content-center'><p className='text-center'>AUNQUE NOS GUSTAN LOS NIÑOS ESTA ES UNA CELEBRACIÓN PARA ADULTOS</p></Col>
+          <Col xs="auto" className='justify-content-center'><p className='text-center'>Aunque nos gustan los niños esta es una celebración para adultos</p></Col>
         </Row>
 
 
         <Row className="justify-content-center pt-5">
-          <Col xs="auto" className='justify-content-center'><p className='text-center'>ESPERAMOS CONTAR CON SU PRESENCIA</p></Col>
+          <Col xs="auto" className='justify-content-center'><p className='text-center'>Esperamos contar con su presencia</p></Col>
         </Row>
         <Row className="justify-content-center pt-3">
           <Col xs="auto" className='justify-content-center'><h2 className='mea-culpa-regular'>¡Muchas gracias!</h2></Col>
