@@ -29,7 +29,7 @@ function App() {
           <Col xs={6}><h1 className='mea-culpa-regular text-end'>Luisa</h1></Col>
         </Row>
         <Row className="justify-content-center">
-          <Col xs="auto"><h1 className='mea-culpa-regular text-center'>- & -</h1></Col>
+          <Col xs="auto"><h2 className='mea-culpa-regular text-center'>- & -</h2></Col>
         </Row>
         <Row className="justify-content-end pb-5">
           <Col xs={6}><h1 className='mea-culpa-regular text-start'>Edinson</h1></Col>
