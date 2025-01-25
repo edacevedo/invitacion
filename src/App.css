@@ -29,22 +29,22 @@ h2 {
 
 .vertical-flowers {
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   left: 0;
   min-width: 20vw;
 }
 
 .vertical-flowers img {
-  max-width: 20vw;
+  max-width: 28vw;
 }
 
 .corner-flowers {
   position: absolute;
   top: 0;
   right: 0;
-  min-width: 20vw;
+  min-width: 30vw;
 }
 
 .corner-flowers img {
-  max-width: 20vw;
+  max-width: 30vw;
 }

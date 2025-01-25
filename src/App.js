@@ -20,19 +20,18 @@ function App() {
         <img  className src={cornerFlowers} alt="" />
       </div>
 
-      <Row className="justify-content-center pt-5">
-        <Col xs="auto"><h6 className='text-center'>AMAR NO ES MIRARSE EL UNO AL OTRO, ES MIRAR JUNTOS EN LA MISMA DIRECCIÓN</h6></Col>
-      </Row>
-
-
       <Row className="justify-content-start pt-5">
         <Col xs={6}><h1 className='mea-culpa-regular text-end'>Luisa</h1></Col>
       </Row>
       <Row className="justify-content-center">
-        <Col xs="auto"><h1 className='mea-culpa-regular text-center'>&</h1></Col>
+        <Col xs="auto"><h1 className='mea-culpa-regular text-center'>- & -</h1></Col>
       </Row>
       <Row className="justify-content-end pb-5">
         <Col xs={6}><h1 className='mea-culpa-regular text-start'>Edinson</h1></Col>
+      </Row>
+
+      <Row className="justify-content-center pt-5">
+        <Col xs="auto"><h6 className='text-center'>AMAR NO ES MIRARSE EL UNO AL OTRO, ES MIRAR JUNTOS EN LA MISMA DIRECCIÓN</h6></Col>
       </Row>
 
       <Row className="justify-content-center pt-1">
