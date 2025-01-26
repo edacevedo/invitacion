@@ -1,30 +1,20 @@
 import './App.css';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
-// import logo from './resources/img/logo-boda.png'
 import homeImage from './resources/img/home-image.JPG'
-// import verticalFlowers from './resources/img/vertical-flowers.PNG'
-// import cornerFlowers from './resources/img/corner-flowers.PNG'
+import contentImage from './resources/img/content-image.jpeg'
 
 function App() {
   return (
     <>
-      <div class="container-image">
+      <div className="container-image-bottom">
         <img src={homeImage} alt="" />
       </div>
-      {/* <img src={homeImage} alt="logo" className='w-100 home-image' /> */}
       <Container>
-
-        {/* <div className='vertical-flowers'>
-          <img  className src={verticalFlowers} alt="" />
-      </div> */}
-        {/* <div className='corner-flowers'>
-        <img  className src={cornerFlowers} alt="" />
-      </div> */}
-
         <Row className="justify-content-start pt-5">
           <Col xs={6}><h1 className='mea-culpa-regular text-end'>Luisa</h1></Col>
         </Row>
@@ -43,13 +33,6 @@ function App() {
           <Col xs="auto"><h4>¡NOS CASAMOS!</h4></Col>
         </Row>
 
-        {/* <Row className="justify-content-center pt-3">
-          <Col xs={12} sm={8} className='justify-content-center'>
-            <img src={homeImage} alt="logo" className='w-100' />
-          </Col>
-        </Row> */}
-
-
         <Row className="justify-content-center pt-5">
           <Col  >
             <p className='text-center'>Con nuestro amor y la bendición de dios tenemos el honor de invitarte a nuestra boda</p>
@@ -61,7 +44,13 @@ function App() {
           <Col xs="auto" className='justify-content-center'><h2>SÁBADO 28 DE JUNIO DE 2025</h2></Col>
         </Row>
 
-
+      </Container>
+      <div className="container-image-top">
+        <div className="container-image-bottom">
+          <img src={contentImage} alt="" />
+        </div>
+      </div>
+      <Container>
         <Row className="justify-content-center pt-5">
           <Col xs="auto" className='justify-content-center'><h4 className='text-center'>CEREMONIA & RECEPCIÓN</h4></Col>
         </Row>
