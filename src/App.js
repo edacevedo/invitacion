@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 // import logo from './resources/img/logo-boda.png'
-import homeImage from './resources/img/home-image.jpeg'
+import homeImage from './resources/img/home-image.JPG'
 // import verticalFlowers from './resources/img/vertical-flowers.PNG'
 // import cornerFlowers from './resources/img/corner-flowers.PNG'
 
