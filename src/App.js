@@ -26,11 +26,11 @@ function App() {
         </Row>
 
         <Row className="justify-content-center pt-5">
-          <Col xs="auto"><h6 className='text-center'>Amar no es mirarse el uno al otro, es mirar juntos en la misma dirección</h6></Col>
+          <Col xs="auto"><p className='text-center mea-culpa-regular '>Amar no es mirarse el uno al otro, es mirar juntos en la misma dirección</p></Col>
         </Row>
 
         <Row className="justify-content-center pt-1">
-          <Col xs="auto"><h4>¡NOS CASAMOS!</h4></Col>
+          <Col xs={6}><h2 className=' text-center mea-culpa-regular '>¡Nos casamos!</h2></Col>
         </Row>
 
         <Row className="justify-content-center pt-5">
@@ -52,7 +52,7 @@ function App() {
       </div>
       <Container>
         <Row className="justify-content-center pt-5">
-          <Col xs="auto" className='justify-content-center'><h4 className='text-center'>CEREMONIA & RECEPCIÓN</h4></Col>
+          <Col xs="auto" className='justify-content-center'><h2 className='text-center mea-culpa-regular '>Ceremonia & Recepción</h2></Col>
         </Row>
         <Row className="justify-content-center">
           <Col xs="auto" className='justify-content-center'>5:30 PM</Col>
