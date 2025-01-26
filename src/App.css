@@ -1,26 +1,82 @@
 #root {
-  /* background-image: url(./resources/img/bg.jpeg); */
+  /* colors */
+  --font-main-color: #231F20;
+  --main-color: #DFE3C8;
+  --body-color: #ffffff;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
   padding-bottom: 5rem;
-  /* background-color: #f1f2f4; */
-  background-color: #ffffff;
-  color: #51545c;
+  background-color: var(--body-color);
+  color: var(--font-main-color);
   font-size: 16px;
 }
 
+/* 23 */
+
+/* Fonts */
+.imperial-script-regular {
+  font-family: "Imperial Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mea-culpa-regular {
+  font-family: "Mea Culpa", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.abhaya-libre-regular {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.abhaya-libre-medium {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.abhaya-libre-semibold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.abhaya-libre-bold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.abhaya-libre-extrabold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* sizes */
+
 h1 {
   font-size: 3.5rem !important;
+  margin: 0 !important;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.5rem !important;
+  margin: 0 !important;
 }
 
 p {
   font-size: 1.3rem;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+/* Images */
 
 .container-image-bottom,
 .container-image-top {
@@ -53,36 +109,14 @@ p {
   background-image: linear-gradient(to bottom, #ffffff, transparent);
 }
 
-.monsieur-regular {
-  font-family: "Monsieur La Doulaise", serif;
-  font-weight: 400;
-  font-style: normal;
-}
+/* time counter */
 
-.mea-culpa-regular {
-  font-family: "Mea Culpa", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.vertical-flowers {
-  position: absolute;
-  top: 13vh;
-  left: 0;
-  min-width: 20vw;
-}
-
-.vertical-flowers img {
-  max-width: 28vw;
-}
-
-.corner-flowers {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 30vw;
-}
-
-.corner-flowers img {
-  max-width: 30vw;
+.time-counter-square {
+  max-width: 4rem;
+  max-height: 3.5rem;
+  border-radius: 17%;
+  background: var(--main-color);
+  padding: .7rem;
+  font-family: 'Abhaya Libre';
+  font-size: 1.5rem;
 }

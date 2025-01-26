@@ -15,33 +15,87 @@ function App() {
         <img src={homeImage} alt="" />
       </div>
       <Container>
-        <Row className="justify-content-start pt-5">
-          <Col xs={6}><h1 className='mea-culpa-regular text-end'>Luisa</h1></Col>
+        <Row className="justify-content-start pt-1">
+          <Col xs={6}><h1 className='imperial-script-regular text-end'>Luisa</h1></Col>
         </Row>
         <Row className="justify-content-center">
           <Col xs="auto"><h2 className='mea-culpa-regular text-center'>- & -</h2></Col>
         </Row>
         <Row className="justify-content-end pb-5">
-          <Col xs={6}><h1 className='mea-culpa-regular text-start'>Edinson</h1></Col>
+          <Col xs={6}><h1 className='imperial-script-regular text-start'>Edinson</h1></Col>
         </Row>
 
-        <Row className="justify-content-center pt-5">
-          <Col xs="auto"><p className='text-center mea-culpa-regular '>Amar no es mirarse el uno al otro, es mirar juntos en la misma dirección</p></Col>
+        <Row className="justify-content-center pt-3">
+          <Col xs="auto">
+            <p className='text-center'>
+              Nos escogimos el uno al otro para amarnos por el
+              resto de nuestras vidas.
+            </p></Col>
         </Row>
 
         <Row className="justify-content-center pt-1">
-          <Col xs={6}><h2 className=' text-center mea-culpa-regular '>¡Nos casamos!</h2></Col>
+          <Col xs="auto"><p className='text-center'>
+            Después de recorrer muchos lugares juntos y
+            compartir momentos inolvidables, llegó el gran día!
+          </p></Col>
         </Row>
 
-        <Row className="justify-content-center pt-5">
+        <Row className="justify-content-center pt-1 pb-3">
+          <Col xs={12}><h2 className='mea-culpa-regular text-center'>Nos casamos!</h2></Col>
+        </Row>
+
+        <Row className="justify-content-center pt-1">
           <Col  >
-            <p className='text-center'>Con nuestro amor y la bendición de dios tenemos el honor de invitarte a nuestra boda</p>
+            <p className='text-center'>
+              Comenzamos una nueva aventura y no seria posible
+              celebrar nuestra boda sin la compañía de nuestra
+              familia y grandes amigos.
+            </p>
           </Col>
         </Row>
 
-
         <Row className="justify-content-center pt-5">
-          <Col xs="auto" className='justify-content-center'><h2>SÁBADO 28 DE JUNIO DE 2025</h2></Col>
+          <Col xs="auto" className='justify-content-center'>
+            <p className='text-center'>
+              ALISTA TU MEJOR PINTA,
+              POR QUE SOLO FALTAN
+            </p>
+          </Col>
+        </Row>
+
+        <Row className="justify-content-center pt-1 pb-5">
+          <Col xs={3} className='justify-content-center'>
+            <div className='text-center time-counter-square'>
+              50
+            </div>
+          </Col>
+          <Col xs={3} className='justify-content-center'>
+            <div className='text-center time-counter-square'>
+              50
+            </div>
+          </Col>
+          <Col xs={3} className='justify-content-center'>
+            <div className='text-center time-counter-square'>
+              50
+            </div>
+          </Col>
+        </Row>
+        <Row className="justify-content-center pt-3 pb-3">
+          <Col xs={3} className='justify-content-center'>
+            <div className='text-center'>
+              Dias
+            </div>
+          </Col>
+          <Col xs={3} className='justify-content-center'>
+            <div className='text-center'>
+              Horas
+            </div>
+          </Col>
+          <Col xs={3} className='justify-content-center'>
+            <div className='text-center'>
+              Minutos
+            </div>
+          </Col>
         </Row>
 
       </Container>
