@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 
 import homeImage from './resources/img/home-image.JPG'
 import contentImage from './resources/img/content-image.jpeg'
+import CountDown from './components/CountDown';
 
 function App() {
   return (
@@ -63,40 +64,7 @@ function App() {
           </Col>
         </Row>
 
-        <Row className="justify-content-center pt-1 pb-5">
-          <Col xs={3} className='justify-content-center'>
-            <div className='text-center time-counter-square'>
-              50
-            </div>
-          </Col>
-          <Col xs={3} className='justify-content-center'>
-            <div className='text-center time-counter-square'>
-              50
-            </div>
-          </Col>
-          <Col xs={3} className='justify-content-center'>
-            <div className='text-center time-counter-square'>
-              50
-            </div>
-          </Col>
-        </Row>
-        <Row className="justify-content-center pt-3 pb-3">
-          <Col xs={3} className='justify-content-center'>
-            <div className='text-center'>
-              Dias
-            </div>
-          </Col>
-          <Col xs={3} className='justify-content-center'>
-            <div className='text-center'>
-              Horas
-            </div>
-          </Col>
-          <Col xs={3} className='justify-content-center'>
-            <div className='text-center'>
-              Minutos
-            </div>
-          </Col>
-        </Row>
+        <CountDown />
 
       </Container>
       <div className="container-image-top">

@@ -92,7 +92,7 @@ p {
 .container-image-bottom::after {
   content: "";
   width: 100%;
-  height: 100px;
+  height: 120px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -102,7 +102,7 @@ p {
 .container-image-top::after {
   content: "";
   width: 100%;
-  height: 100px;
+  height: 200px;
   position: absolute;
   left: 0;
   top: 0;
@@ -114,6 +114,7 @@ p {
 .time-counter-square {
   max-width: 4rem;
   max-height: 3.5rem;
+  margin: auto;
   border-radius: 17%;
   background: var(--main-color);
   padding: .7rem;
