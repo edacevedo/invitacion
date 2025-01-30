@@ -28,26 +28,26 @@ function App() {
 
         <Row className="justify-content-center pt-3">
           <Col xs="auto">
-            <p className='text-center'>
+            <p className='text-center abhaya-libre-regular'>
               Nos escogimos el uno al otro para amarnos por el
               resto de nuestras vidas.
             </p></Col>
         </Row>
 
         <Row className="justify-content-center pt-1">
-          <Col xs="auto"><p className='text-center'>
+          <Col xs="auto"><p className='text-center abhaya-libre-regular'>
             Después de recorrer muchos lugares juntos y
             compartir momentos inolvidables, llegó el gran día!
           </p></Col>
         </Row>
 
         <Row className="justify-content-center pt-1 pb-3">
-          <Col xs={12}><h2 className='mea-culpa-regular text-center'>Nos casamos!</h2></Col>
+          <Col xs={12}><h2 className='imperial-script-regular text-center'>Nos casamos!</h2></Col>
         </Row>
 
         <Row className="justify-content-center pt-1">
           <Col  >
-            <p className='text-center'>
+            <p className='text-center abhaya-libre-regular'>
               Comenzamos una nueva aventura y no seria posible
               celebrar nuestra boda sin la compañía de nuestra
               familia y grandes amigos.
@@ -57,7 +57,7 @@ function App() {
 
         <Row className="justify-content-center pt-5">
           <Col xs="auto" className='justify-content-center'>
-            <p className='text-center'>
+            <p className='text-center abhaya-libre-medium'>
               ALISTA TU MEJOR PINTA,
               POR QUE SOLO FALTAN
             </p>
@@ -73,14 +73,30 @@ function App() {
         </div>
       </div>
       <Container>
-        <Row className="justify-content-center pt-5">
-          <Col xs="auto" className='justify-content-center'><h2 className='text-center mea-culpa-regular '>Ceremonia & Recepción</h2></Col>
+        <Row className="justify-content-center pt-3">
+          <Col xs="auto" className='justify-content-center'><h2 className='text-center imperial-script-regular'>Ceremonia y Recepción</h2></Col>
+        </Row>
+        {/* <Row className="justify-content-center mt-1">
+          <Col xs="auto" className='justify-content-center abhaya-libre-extrabold'><h2>Junio</h2></Col>
+        </Row> */}
+        <Row className="justify-content-center">
+          <Col xs={12} className='justify-content-center d-flex align-content-center'>
+            <svg width="200" height="50">
+              <defs>
+                <path id="curve" d="M 50,50 Q 300,-50 500,850" fill="transparent" />
+              </defs>
+              <text fill="black" >
+                <textPath href="#curve" className='date-month abhaya-libre-bold'>
+                  Junio
+                </textPath>
+              </text>
+            </svg>
+          </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col xs="auto" className='justify-content-center'>5:30 PM</Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col xs="auto" className='justify-content-center'><p className='text-center'>Hacienda la unión, jamundí, valle del cauca, CO</p></Col>
+          <Col xs={4} className='justify-content-center align-content-center'><div className='text-center abhaya-libre-bold date-weekday'>Sábado</div></Col>
+          <Col xs={4} className='justify-content-center'><div className='text-center abhaya-libre-extrabold date-day'>28</div></Col>
+          <Col xs={4} className='justify-content-center align-content-center'><div className='text-center abhaya-libre-bold date-year'>2025</div></Col>
         </Row>
         <Row className="justify-content-center pt-1">
           <Col xs="auto" className='justify-content-center'>
@@ -132,7 +148,7 @@ function App() {
           <Col xs="auto" className='justify-content-center'><h2 className='mea-culpa-regular'>¡Muchas gracias!</h2></Col>
         </Row>
 
-      </Container>
+      </Container >
     </>
   );
 

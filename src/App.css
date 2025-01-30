@@ -121,3 +121,21 @@ p {
   font-family: 'Abhaya Libre';
   font-size: 1.5rem;
 }
+
+/* Date */
+.date-weekday,
+.date-year {
+  font-size: 1.5rem;
+  padding: .3rem 0;
+  border-bottom: 2px solid var(--font-main-color);
+  border-top: 2px solid var(--font-main-color);
+  ;
+}
+
+.date-day {
+  font-size: 7rem;
+}
+
+.date-month {
+  font-size: 3rem;
+}

@@ -35,7 +35,7 @@ export default function CountDown() {
     // };
 
     const formatTime = (time) => {
-        const seconds = Math.floor((time / 1000) % 60);
+        // const seconds = Math.floor((time / 1000) % 60);
         const minutes = Math.floor((time / (1000 * 60)) % 60);
         const hours = Math.floor((time / (1000 * 60 * 60)) % 24);
         const days = Math.floor(time / (1000 * 60 * 60 * 24));
@@ -45,25 +45,25 @@ export default function CountDown() {
             <>
                 <Row className="justify-content-center pt-1 pb-1">
                     <Col xs={3} className='justify-content-center'>
-                        <div className='text-center time-counter-square'>
+                        <div className='text-center time-counter-square abhaya-libre-medium'>
                             {days.toString().padStart(2, "0")}
                         </div>
                     </Col>
                     <Col xs={3} className='justify-content-center'>
-                        <div className='text-center time-counter-square'>
+                        <div className='text-center time-counter-square abhaya-libre-medium'>
                             {hours.toString().padStart(2, "0")}
                         </div>
                     </Col>
-                    <Col xs={3} className='justify-content-center'>
+                    <Col xs={3} className='justify-content-center abhaya-libre-medium'>
                         <div className='text-center time-counter-square'>
                             {minutes.toString().padStart(2, "0")}
                         </div>
                     </Col>
-                    <Col xs={3} className='justify-content-center'>
+                    {/* <Col xs={3} className='justify-content-center'>
                         <div className='text-center time-counter-square'>
                             {seconds.toString().padStart(2, "0")}
                         </div>
-                    </Col>
+                    </Col> */}
                 </Row>
             </>
         )
@@ -74,25 +74,25 @@ export default function CountDown() {
             {formatTime(timeRemaining)}
             <Row className="justify-content-center pt-3 pb-3">
                 <Col xs={3} className='justify-content-center'>
-                    <div className='text-center'>
+                    <div className='text-center abhaya-libre-medium'>
                         Dias
                     </div>
                 </Col>
                 <Col xs={3} className='justify-content-center'>
-                    <div className='text-center'>
+                    <div className='text-center abhaya-libre-medium'>
                         Horas
                     </div>
                 </Col>
                 <Col xs={3} className='justify-content-center'>
-                    <div className='text-center'>
+                    <div className='text-center abhaya-libre-medium'>
                         Minutos
                     </div>
                 </Col>
-                <Col xs={3} className='justify-content-center'>
+                {/* <Col xs={3} className='justify-content-center'>
                     <div className='text-center'>
                         Segundos
                     </div>
-                </Col>
+                </Col> */}
             </Row>
         </>
     )
