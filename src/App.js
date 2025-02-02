@@ -27,17 +27,17 @@ function App() {
       <Container className='px-7'>
         <Row className="justify-content-start pt-1">
           <Col xs={6}>
-            <div className='imperial-script-regular text-end fs-10 max-h-3'>Luisa</div>
+            <div className='imperial-script-regular text-end ft-s-10 max-h-3'>Luisa</div>
           </Col>
         </Row>
         <Row className="justify-content-center">
           <Col xs="auto">
-            <div className='mea-culpa-regular text-center fs-10 max-h-3'>&</div>
+            <div className='mea-culpa-regular text-center ft-s-10 max-h-3'>&</div>
           </Col>
         </Row>
         <Row className="justify-content-end pb-3">
           <Col xs={6}>
-            <div className='imperial-script-regular text-start fs-10 name-container'><div>Edinson</div></div>
+            <div className='imperial-script-regular text-start ft-s-10 name-container'><div>Edinson</div></div>
           </Col>
         </Row>
 
@@ -155,11 +155,11 @@ function App() {
         <Row className="justify-content-center align-items-center">
           <Col xs={3} className='justify-content-center'>
             <img className="w-100" src={menDress} alt="" />
-            <div className='text-center imperial-script-regular fs-2'>Caballeros</div>
+            <div className='text-center imperial-script-regular ft-s-2'>Caballeros</div>
           </Col>
           <Col xs={3} className='justify-content-center'>
             <img className="w-100" src={womenDress} alt="" />
-            <div className='text-center imperial-script-regular fs-2'>Damas</div>
+            <div className='text-center imperial-script-regular ft-s-2'>Damas</div>
           </Col>
           <Col xs={6} className='justify-content-center'>
             <p className='text-center libre-baskerville-regular'>
@@ -211,7 +211,7 @@ function App() {
           </Col>
           <Col xs={4} className='justify-content-center'>
             <img className="w-50 letter-img" src={loveLetter} alt="" />
-            <div className='text-center imperial-script-regular fs-2'>
+            <div className='text-center imperial-script-regular ft-s-2'>
               Lluvia de sobres
             </div>
           </Col>
