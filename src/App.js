@@ -26,13 +26,19 @@ function App() {
       </div>
       <Container className='px-7'>
         <Row className="justify-content-start pt-1">
-          <Col xs={6}><h1 className='imperial-script-regular text-end'>Luisa</h1></Col>
+          <Col xs={6}>
+            <div className='imperial-script-regular text-end fs-10 max-h-3'>Luisa</div>
+          </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col xs="auto"><h2 className='mea-culpa-regular text-center'>- & -</h2></Col>
+          <Col xs="auto">
+            <div className='mea-culpa-regular text-center fs-10 max-h-3'>&</div>
+          </Col>
         </Row>
-        <Row className="justify-content-end pb-5">
-          <Col xs={6}><h1 className='imperial-script-regular text-start'>Edinson</h1></Col>
+        <Row className="justify-content-end pb-3">
+          <Col xs={6}>
+            <div className='imperial-script-regular text-start fs-10 max-h-3 name-container'><div>Edinson</div></div>
+          </Col>
         </Row>
 
         <Row className="justify-content-center pt-3">
@@ -51,7 +57,7 @@ function App() {
         </Row>
 
         <Row className="justify-content-center pt-1 pb-3">
-          <Col xs={12}><h2 className='imperial-script-regular text-center'>Nos casamos!</h2></Col>
+          <Col xs={12}><h2 className='imperial-script-regular text-center'>¡Nos casamos!</h2></Col>
         </Row>
 
         <Row className="justify-content-center pt-1">
@@ -205,9 +211,9 @@ function App() {
           </Col>
           <Col xs={4} className='justify-content-center'>
             <img className="w-50 letter-img" src={loveLetter} alt="" />
-            <h3 className='text-center imperial-script-regular'>
+            <div className='text-center imperial-script-regular fs-2'>
               Lluvia de sobres
-            </h3>
+            </div>
           </Col>
         </Row>
       </Container>
