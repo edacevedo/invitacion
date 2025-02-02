@@ -1,25 +1,30 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 import homeImage from './resources/img/home-image.JPG'
+import welcomeImage from './resources/img/welcome-image.jpeg'
 import contentImage from './resources/img/content-image.jpeg'
 import womenDress from './resources/img/women-dress.png'
 import menDress from './resources/img/men-dress.png'
 import loveLetter from './resources/img/love-letter.png'
 
 import CountDown from './components/CountDown';
+import ConfirmModal from './components/ConfirmModal';
 
 function App() {
+  const [showConfirmModal, setShowConfirmModal] = useState(false)
+
+
   return (
     <>
       <div className="container-image-bottom">
-        <img src={homeImage} alt="" />
+        <img src={welcomeImage} alt="" />
       </div>
-      <Container className='px-4'>
+      <Container className='px-7'>
         <Row className="justify-content-start pt-1">
           <Col xs={6}><h1 className='imperial-script-regular text-end'>Luisa</h1></Col>
         </Row>
@@ -32,14 +37,14 @@ function App() {
 
         <Row className="justify-content-center pt-3">
           <Col xs="auto">
-            <p className='text-center abhaya-libre-regular'>
+            <p className='text-center libre-baskerville-regular'>
               Nos escogimos el uno al otro para amarnos por el
               resto de nuestras vidas.
             </p></Col>
         </Row>
 
         <Row className="justify-content-center pt-1">
-          <Col xs="auto"><p className='text-center abhaya-libre-regular'>
+          <Col xs="auto"><p className='text-center libre-baskerville-regular'>
             Después de recorrer muchos lugares juntos y
             compartir momentos inolvidables, llegó el gran día!
           </p></Col>
@@ -51,7 +56,7 @@ function App() {
 
         <Row className="justify-content-center pt-1">
           <Col  >
-            <p className='text-center abhaya-libre-regular'>
+            <p className='text-center libre-baskerville-regular'>
               Comenzamos una nueva aventura y no seria posible
               celebrar nuestra boda sin la compañía de nuestra
               familia y grandes amigos.
@@ -61,8 +66,8 @@ function App() {
 
         <Row className="justify-content-center pt-5">
           <Col xs="auto" className='justify-content-center'>
-            <p className='text-center abhaya-libre-medium'>
-              ALISTA TU MEJOR PINTA,
+            <p className='text-center libre-baskerville-regular'>
+              ALISTA TU MEJOR PINTA,<br />
               POR QUE SOLO FALTAN
             </p>
           </Col>
@@ -76,15 +81,13 @@ function App() {
           <img src={contentImage} alt="" />
         </div>
       </div>
-      <Container className='px-4'>
+      <Container className='px-7'>
         <Row className="justify-content-center pt-3">
           <Col xs="auto" className='justify-content-center'>
             <h2 className='text-center imperial-script-regular'>Ceremonia y Recepción</h2>
           </Col>
         </Row>
-        {/* <Row className="justify-content-center mt-1">
-          <Col xs="auto" className='justify-content-center abhaya-libre-extrabold'><h2>Junio</h2></Col>
-        </Row> */}
+
         <Row className="justify-content-center pt-3">
           <Col xs={12} className='justify-content-center d-flex align-content-center'>
             <svg width="200" height="50">
@@ -107,7 +110,7 @@ function App() {
 
         <Row className="justify-content-center">
           <Col xs="auto" className='justify-content-center'>
-            <p className='text-center abhaya-libre-medium'>
+            <p className='text-center libre-baskerville-regular'>
               Hacienda La unión, <br />
               Jamundí, Valle del Cauca
             </p>
@@ -116,7 +119,7 @@ function App() {
 
         <Row className="justify-content-center">
           <Col xs="auto" className='justify-content-center'>
-            <h3 className='abhaya-libre-medium'>5:30 pm</h3>
+            <h3 className='abhaya-libre-regular'>5:00 pm</h3>
           </Col>
         </Row>
 
@@ -126,36 +129,9 @@ function App() {
           </Col>
         </Row>
 
-      </Container >
-      <div className='justify-content-center dress-code-title imperial-script-regular mt-5 mb-5'>
-        Código de vestimenta
-      </div>
-      <Container className='px-4'>
-
-        <Row className="justify-content-center align-items-center">
-          <Col xs={3} className='justify-content-center'>
-            <img className="w-100" src={menDress} alt="" />
-          </Col>
-          <Col xs={3} className='justify-content-center'>
-            <img className="w-100" src={womenDress} alt="" />
-          </Col>
-          <Col xs={6} className='justify-content-center'>
-            <p className='text-center abhaya-libre-medium'>
-              Nos encantará verte formal, <br />
-              por eso ellos traje deberán
-              usar y ellas vestidos largos
-              llevarán...
-            </p>
-            <p className='text-center abhaya-libre-medium'>
-              El blanco se reserva para la
-              novia.
-            </p>
-          </Col>
-        </Row>
-
-        <Row className="justify-content-center align-items-center">
+        <Row className="justify-content-center align-items-center pt-5">
           <Col xs={12} className='justify-content-center'>
-            <p className='text-center abhaya-libre-medium'>
+            <p className='text-center libre-baskerville-regular'>
               Esperamos que puedas acompañarnos. <br />
 
               Respetamos tu tiempo y el de los demás, por lo cual
@@ -164,7 +140,51 @@ function App() {
           </Col>
         </Row>
 
-        <Row className="justify-content-center align-items-center mt-3">
+      </Container >
+      <div className='justify-content-center dress-code-title imperial-script-regular mt-5 mb-5'>
+        Código de vestimenta
+      </div>
+      <Container className='px-7'>
+
+        <Row className="justify-content-center align-items-center">
+          <Col xs={3} className='justify-content-center'>
+            <img className="w-100" src={menDress} alt="" />
+            <div className='text-center imperial-script-regular fs-2'>Caballeros</div>
+          </Col>
+          <Col xs={3} className='justify-content-center'>
+            <img className="w-100" src={womenDress} alt="" />
+            <div className='text-center imperial-script-regular fs-2'>Damas</div>
+          </Col>
+          <Col xs={6} className='justify-content-center'>
+            <p className='text-center libre-baskerville-regular'>
+              Nos encantará verte formal, <br />
+              por eso ellos traje deberán
+              usar y ellas vestidos largos
+              llevarán...
+            </p>
+          </Col>
+        </Row>
+
+        <Row className="justify-content-center align-items-center pt-3">
+          <Col xs={12} className='justify-content-center'>
+            <p className='text-center libre-baskerville-regular'>
+              **El blanco se reserva para la
+              novia.**
+            </p>
+          </Col>
+        </Row>
+
+      </Container>
+
+      <div className="container-image-top">
+        <div className="container-image-bottom">
+          <img src={homeImage} alt="" />
+        </div>
+      </div>
+
+      <Container className='px-7'>
+
+        <Row className="justify-content-center align-items-center mt-5">
           <Col xs={12} className='justify-content-center'>
             <p className='text-center imperial-script-regular paragraph'>
               “El amor nunca se da por vencido, jamás
@@ -196,7 +216,7 @@ function App() {
         Confirmanos tu asistencia
       </div>
 
-      <Container className='px-4'>
+      <Container className='px-7'>
 
 
         <Row className="justify-content-start">
@@ -211,17 +231,12 @@ function App() {
 
         <Row className="justify-content-center">
           <Col xs="auto" className='justify-content-center'>
-            <Button className="wedding-btn shadow" onClick={() => { window.open('https://maps.app.goo.gl/2iieVtKoAbpxtpTi9') }}>Confirmar</Button>
+            <Button className="wedding-btn shadow" onClick={() => { setShowConfirmModal(true) }}>Confirmar</Button>
           </Col>
         </Row>
-        {/* <Row className='pt-5'>
-          <Col xs={12} className='justify-content-center'>
-            <h2 className='text-center imperial-script-regular'>
-              ¡Muchas gracias!
-            </h2>
-          </Col>
-        </Row> */}
       </Container>
+
+      <ConfirmModal show={showConfirmModal} handleCloseModal={() => { setShowConfirmModal(false) }} />
     </>
   );
 

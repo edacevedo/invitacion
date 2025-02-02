@@ -3,10 +3,7 @@ import Col from 'react-bootstrap/esm/Col'
 import Row from 'react-bootstrap/esm/Row'
 
 export default function CountDown() {
-
-    // const [eventName, setEventName] = useState("");
-    const [eventDate,] = useState("Sat Jun 28 2025 17:30:00 GMT-0500");
-    // const [countdownStarted, setCountdownStarted] = useState(false);
+    const [eventDate,] = useState("Sat Jun 28 2025 17:00:00 GMT-0500");
     const [timeRemaining, setTimeRemaining] = useState(0);
 
     useEffect(() => {
@@ -35,7 +32,7 @@ export default function CountDown() {
     // };
 
     const formatTime = (time) => {
-        // const seconds = Math.floor((time / 1000) % 60);
+        const seconds = Math.floor((time / 1000) % 60);
         const minutes = Math.floor((time / (1000 * 60)) % 60);
         const hours = Math.floor((time / (1000 * 60 * 60)) % 24);
         const days = Math.floor(time / (1000 * 60 * 60 * 24));
@@ -44,26 +41,26 @@ export default function CountDown() {
         return (
             <>
                 <Row className="justify-content-center pt-1 pb-1">
-                    <Col xs={3} className='justify-content-center'>
-                        <div className='text-center time-counter-square abhaya-libre-medium'>
+                    <Col xs={3} className='justify-content-center libre-baskerville-regular'>
+                        <div className='text-center time-counter-square shadow'>
                             {days.toString().padStart(2, "0")}
                         </div>
                     </Col>
-                    <Col xs={3} className='justify-content-center'>
-                        <div className='text-center time-counter-square abhaya-libre-medium'>
+                    <Col xs={3} className='justify-content-center libre-baskerville-regular'>
+                        <div className='text-center time-counter-square shadow'>
                             {hours.toString().padStart(2, "0")}
                         </div>
                     </Col>
-                    <Col xs={3} className='justify-content-center abhaya-libre-medium'>
-                        <div className='text-center time-counter-square'>
+                    <Col xs={3} className='justify-content-center libre-baskerville-regular'>
+                        <div className='text-center time-counter-square shadow'>
                             {minutes.toString().padStart(2, "0")}
                         </div>
                     </Col>
-                    {/* <Col xs={3} className='justify-content-center'>
-                        <div className='text-center time-counter-square'>
+                    <Col xs={3} className='justify-content-center libre-baskerville-regular'>
+                        <div className='text-center time-counter-square shadow'>
                             {seconds.toString().padStart(2, "0")}
                         </div>
-                    </Col> */}
+                    </Col>
                 </Row>
             </>
         )
@@ -74,25 +71,25 @@ export default function CountDown() {
             {formatTime(timeRemaining)}
             <Row className="justify-content-center pt-3 pb-3">
                 <Col xs={3} className='justify-content-center'>
-                    <div className='text-center abhaya-libre-medium'>
+                    <div className='text-center libre-baskerville-regular'>
                         Dias
                     </div>
                 </Col>
                 <Col xs={3} className='justify-content-center'>
-                    <div className='text-center abhaya-libre-medium'>
+                    <div className='text-center libre-baskerville-regular'>
                         Horas
                     </div>
                 </Col>
                 <Col xs={3} className='justify-content-center'>
-                    <div className='text-center abhaya-libre-medium'>
+                    <div className='text-center libre-baskerville-regular'>
                         Minutos
                     </div>
                 </Col>
-                {/* <Col xs={3} className='justify-content-center'>
-                    <div className='text-center'>
+                <Col xs={3} className='justify-content-center'>
+                    <div className='text-center libre-baskerville-regular'>
                         Segundos
                     </div>
-                </Col> */}
+                </Col>
             </Row>
         </>
     )
