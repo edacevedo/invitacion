@@ -1,8 +1,9 @@
 #root {
   /* colors */
   --font-main-color: #231F20;
+  --font-second-color: #325343;
   --main-color: #DFE3C8;
-  --body-color: #ffffff;
+  --body-color: #fcfcfc;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -10,6 +11,7 @@
   background-color: var(--body-color);
   color: var(--font-main-color);
   font-size: 14px;
+
 }
 
 .px-7 {
@@ -37,6 +39,7 @@
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
+  color: var(--font-second-color);
 }
 
 .libre-baskerville-bold {
@@ -109,6 +112,7 @@ p {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
+  color: var(--font-second-color);
 }
 
 .max-h-3 {
