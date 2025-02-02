@@ -21,8 +21,10 @@ function App() {
 
   return (
     <>
-      <div className="container-image-bottom">
-        <img src={welcomeImage} alt="" />
+      <div className="container-image-top">
+        <div className="container-image-bottom">
+          <img src={welcomeImage} alt="" />
+        </div>
       </div>
       <Container className='px-7'>
         <Row className="justify-content-start pt-1">
@@ -43,14 +45,14 @@ function App() {
 
         <Row className="justify-content-center pt-3">
           <Col xs="auto">
-            <p className='text-center libre-baskerville-regular'>
+            <p className='text-center libre-baskerville-regular secondary-color'>
               Nos escogimos el uno al otro para amarnos por el
               resto de nuestras vidas.
             </p></Col>
         </Row>
 
         <Row className="justify-content-center pt-1">
-          <Col xs="auto"><p className='text-center libre-baskerville-regular'>
+          <Col xs="auto"><p className='text-center libre-baskerville-regular secondary-color'>
             Después de recorrer muchos lugares juntos y
             compartir momentos inolvidables, llegó el gran día!
           </p></Col>
@@ -62,7 +64,7 @@ function App() {
 
         <Row className="justify-content-center pt-1">
           <Col  >
-            <p className='text-center libre-baskerville-regular'>
+            <p className='text-center libre-baskerville-regular secondary-color'>
               Comenzamos una nueva aventura y no seria posible
               celebrar nuestra boda sin la compañía de nuestra
               familia y grandes amigos.
@@ -72,7 +74,7 @@ function App() {
 
         <Row className="justify-content-center pt-5">
           <Col xs="auto" className='justify-content-center'>
-            <p className='text-center libre-baskerville-regular'>
+            <p className='text-center libre-baskerville-regular secondary-color'>
               ALISTA TU MEJOR PINTA,<br />
               POR QUE SOLO FALTAN
             </p>
@@ -137,7 +139,7 @@ function App() {
 
         <Row className="justify-content-center align-items-center pt-5">
           <Col xs={12} className='justify-content-center'>
-            <p className='text-center libre-baskerville-regular'>
+            <p className='text-center libre-baskerville-regular secondary-color'>
               Esperamos que puedas acompañarnos. <br />
 
               Respetamos tu tiempo y el de los demás, por lo cual
@@ -162,7 +164,7 @@ function App() {
             <div className='text-center imperial-script-regular ft-s-2'>Damas</div>
           </Col>
           <Col xs={6} className='justify-content-center'>
-            <p className='text-center libre-baskerville-regular'>
+            <p className='text-center libre-baskerville-regular secondary-color'>
               Nos encantará verte formal, <br />
               por eso ellos traje deberán
               usar y ellas vestidos largos
@@ -173,7 +175,7 @@ function App() {
 
         <Row className="justify-content-center align-items-center pt-3">
           <Col xs={12} className='justify-content-center'>
-            <p className='text-center libre-baskerville-regular'>
+            <p className='text-center libre-baskerville-regular secondary-color'>
               **El blanco se reserva para la
               novia.**
             </p>
@@ -202,7 +204,7 @@ function App() {
 
         <Row className="justify-content-center align-items-center mt-3">
           <Col xs={8} className='justify-content-center'>
-            <p className='text-center'>
+            <p className='text-center secondary-color'>
               Ya tenemos pensado el Ferrari, la
               mansión y el velero.
               Ahora lo único que nos falta es el

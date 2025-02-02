@@ -41,23 +41,23 @@ export default function CountDown() {
         return (
             <>
                 <Row className="justify-content-center pt-1 pb-1">
-                    <Col xs={3} className='justify-content-center libre-baskerville-regular'>
-                        <div className='text-center time-counter-square shadow'>
-                            {days.toString().padStart(2, "0")}
+                    <Col xs={2} className='justify-content-center libre-baskerville-regular'>
+                        <div className='text-center time-counter-square'>
+                            {days.toString().padStart(2, "0") + ":"}
                         </div>
                     </Col>
-                    <Col xs={3} className='justify-content-center libre-baskerville-regular'>
-                        <div className='text-center time-counter-square shadow'>
-                            {hours.toString().padStart(2, "0")}
+                    <Col xs={2} className='justify-content-center libre-baskerville-regular'>
+                        <div className='text-center time-counter-square'>
+                            {hours.toString().padStart(2, "0") + ":"}
                         </div>
                     </Col>
-                    <Col xs={3} className='justify-content-center libre-baskerville-regular'>
-                        <div className='text-center time-counter-square shadow'>
-                            {minutes.toString().padStart(2, "0")}
+                    <Col xs={2} className='justify-content-center libre-baskerville-regular'>
+                        <div className='text-center time-counter-square'>
+                            {minutes.toString().padStart(2, "0") + ":"}
                         </div>
                     </Col>
-                    <Col xs={3} className='justify-content-center libre-baskerville-regular'>
-                        <div className='text-center time-counter-square shadow'>
+                    <Col xs={2} className='justify-content-center libre-baskerville-regular'>
+                        <div className='text-center time-counter-square'>
                             {seconds.toString().padStart(2, "0")}
                         </div>
                     </Col>
@@ -69,23 +69,23 @@ export default function CountDown() {
     return (
         <>
             {formatTime(timeRemaining)}
-            <Row className="justify-content-center pt-3 pb-3">
-                <Col xs={3} className='justify-content-center'>
+            <Row className="justify-content-center pb-3 ">
+                <Col xs={2} className='justify-content-center px-0'>
                     <div className='text-center libre-baskerville-regular'>
                         Dias
                     </div>
                 </Col>
-                <Col xs={3} className='justify-content-center'>
+                <Col xs={2} className='justify-content-center px-0'>
                     <div className='text-center libre-baskerville-regular'>
                         Horas
                     </div>
                 </Col>
-                <Col xs={3} className='justify-content-center'>
+                <Col xs={2} className='justify-content-center px-0'>
                     <div className='text-center libre-baskerville-regular'>
                         Minutos
                     </div>
                 </Col>
-                <Col xs={3} className='justify-content-center'>
+                <Col xs={2} className='justify-content-center px-0'>
                     <div className='text-center libre-baskerville-regular'>
                         Segundos
                     </div>

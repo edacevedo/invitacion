@@ -14,6 +14,10 @@
 
 }
 
+.secondary-color {
+  color: var(--font-second-color);
+}
+
 .px-7 {
   padding-left: 3em !important;
   padding-right: 3em !important;
@@ -39,7 +43,6 @@
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
-  color: var(--font-second-color);
 }
 
 .libre-baskerville-bold {
@@ -112,7 +115,6 @@ p {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
-  color: var(--font-second-color);
 }
 
 .max-h-3 {
@@ -169,12 +171,16 @@ p {
   max-width: 4em;
   max-height: 3.5em;
   margin: auto;
-  border-radius: 17%;
-  background: var(--main-color);
-  padding: .7em;
+  /* border-radius: 17%; */
+  /* background: var(--main-color); */
+  padding: .7em 0 0 0;
   font-family: 'Abhaya Libre';
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
+
+/* .time-counter-square::after {
+  content: ':';
+} */
 
 /* Date */
 .date-weekday,
