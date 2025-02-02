@@ -7,6 +7,10 @@ import Button from 'react-bootstrap/Button';
 
 import homeImage from './resources/img/home-image.JPG'
 import contentImage from './resources/img/content-image.jpeg'
+import womenDress from './resources/img/women-dress.png'
+import menDress from './resources/img/men-dress.png'
+import loveLetter from './resources/img/love-letter.png'
+
 import CountDown from './components/CountDown';
 
 function App() {
@@ -15,7 +19,7 @@ function App() {
       <div className="container-image-bottom">
         <img src={homeImage} alt="" />
       </div>
-      <Container>
+      <Container className='px-4'>
         <Row className="justify-content-start pt-1">
           <Col xs={6}><h1 className='imperial-script-regular text-end'>Luisa</h1></Col>
         </Row>
@@ -72,14 +76,16 @@ function App() {
           <img src={contentImage} alt="" />
         </div>
       </div>
-      <Container>
+      <Container className='px-4'>
         <Row className="justify-content-center pt-3">
-          <Col xs="auto" className='justify-content-center'><h2 className='text-center imperial-script-regular'>Ceremonia y Recepción</h2></Col>
+          <Col xs="auto" className='justify-content-center'>
+            <h2 className='text-center imperial-script-regular'>Ceremonia y Recepción</h2>
+          </Col>
         </Row>
         {/* <Row className="justify-content-center mt-1">
           <Col xs="auto" className='justify-content-center abhaya-libre-extrabold'><h2>Junio</h2></Col>
         </Row> */}
-        <Row className="justify-content-center">
+        <Row className="justify-content-center pt-3">
           <Col xs={12} className='justify-content-center d-flex align-content-center'>
             <svg width="200" height="50">
               <defs>
@@ -98,57 +104,124 @@ function App() {
           <Col xs={4} className='justify-content-center'><div className='text-center abhaya-libre-extrabold date-day'>28</div></Col>
           <Col xs={4} className='justify-content-center align-content-center'><div className='text-center abhaya-libre-bold date-year'>2025</div></Col>
         </Row>
-        <Row className="justify-content-center pt-1">
+
+        <Row className="justify-content-center">
           <Col xs="auto" className='justify-content-center'>
-            <Button variant="outline-primary" onClick={() => { window.open('https://maps.app.goo.gl/2iieVtKoAbpxtpTi9') }}>Ver ubicación</Button>
+            <p className='text-center abhaya-libre-medium'>
+              Hacienda La unión, <br />
+              Jamundí, Valle del Cauca
+            </p>
           </Col>
         </Row>
 
-
-        <Row className="justify-content-center pt-5">
-          <Col xs="auto" className='justify-content-center'>Hemos reservado</Col>
-        </Row>
         <Row className="justify-content-center">
-          <Col xs="auto" className='justify-content-center'><h3 className='text-center'>1</h3></Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col xs="auto" className='justify-content-center'>Lugar en su honer</Col>
-        </Row>
-        <Row className="justify-content-center pt-3">
-          <Col xs="auto" className='justify-content-center'><p className='text-center'>Agradecemos confirme su asistencia antes del 29 de marzo</p></Col>
-        </Row>
-        <Row className="justify-content-center pt-1">
           <Col xs="auto" className='justify-content-center'>
-            <Button variant="outline-primary" onClick={() => { window.open('https://maps.app.goo.gl/2iieVtKoAbpxtpTi9') }}>
-              Confirmar asistencia
-            </Button>
+            <h3 className='abhaya-libre-medium'>5:30 pm</h3>
           </Col>
         </Row>
 
-
         <Row className="justify-content-center pt-5">
-          <Col xs="auto" className='justify-content-center'><h5>CÓDIGO DE VESTIMENTA</h5></Col>
-        </Row>
-        <Row className="justify-content-center pt-1">
-          <Col xs="auto" className='justify-content-center'><p className='text-center'>Formal</p></Col>
-        </Row>
-
-        <Row className="justify-content-center pt-5">
-          <Col xs="auto" className='justify-content-center'><h5>SOLO ADULTOS</h5></Col>
-        </Row>
-        <Row className="justify-content-center pt-1">
-          <Col xs="auto" className='justify-content-center'><p className='text-center'>Aunque nos gustan los niños esta es una celebración para adultos</p></Col>
-        </Row>
-
-
-        <Row className="justify-content-center pt-5">
-          <Col xs="auto" className='justify-content-center'><p className='text-center'>Esperamos contar con su presencia</p></Col>
-        </Row>
-        <Row className="justify-content-center pt-3">
-          <Col xs="auto" className='justify-content-center'><h2 className='mea-culpa-regular'>¡Muchas gracias!</h2></Col>
+          <Col xs="auto" className='justify-content-center'>
+            <Button className="wedding-btn shadow" onClick={() => { window.open('https://maps.app.goo.gl/2iieVtKoAbpxtpTi9') }}>Ver ubicación</Button>
+          </Col>
         </Row>
 
       </Container >
+      <div className='justify-content-center dress-code-title imperial-script-regular mt-5 mb-5'>
+        Código de vestimenta
+      </div>
+      <Container className='px-4'>
+
+        <Row className="justify-content-center align-items-center">
+          <Col xs={3} className='justify-content-center'>
+            <img className="w-100" src={menDress} alt="" />
+          </Col>
+          <Col xs={3} className='justify-content-center'>
+            <img className="w-100" src={womenDress} alt="" />
+          </Col>
+          <Col xs={6} className='justify-content-center'>
+            <p className='text-center abhaya-libre-medium'>
+              Nos encantará verte formal, <br />
+              por eso ellos traje deberán
+              usar y ellas vestidos largos
+              llevarán...
+            </p>
+            <p className='text-center abhaya-libre-medium'>
+              El blanco se reserva para la
+              novia.
+            </p>
+          </Col>
+        </Row>
+
+        <Row className="justify-content-center align-items-center">
+          <Col xs={12} className='justify-content-center'>
+            <p className='text-center abhaya-libre-medium'>
+              Esperamos que puedas acompañarnos. <br />
+
+              Respetamos tu tiempo y el de los demás, por lo cual
+              procuraremos dar inicio a la hora indicada.
+            </p>
+          </Col>
+        </Row>
+
+        <Row className="justify-content-center align-items-center mt-3">
+          <Col xs={12} className='justify-content-center'>
+            <p className='text-center imperial-script-regular paragraph'>
+              “El amor nunca se da por vencido, jamás
+              pierde la fe, siempre tiene esperanzas y se
+              mantiene firme en toda circunstancia.”
+            </p>
+          </Col>
+        </Row>
+
+        <Row className="justify-content-center align-items-center mt-3">
+          <Col xs={8} className='justify-content-center'>
+            <p className='text-center'>
+              Ya tenemos pensado el Ferrari, la
+              mansión y el velero.
+              Ahora lo único que nos falta es el
+              dinero...
+            </p>
+          </Col>
+          <Col xs={4} className='justify-content-center'>
+            <img className="w-50 letter-img" src={loveLetter} alt="" />
+            <h3 className='text-center imperial-script-regular'>
+              Lluvia de sobres
+            </h3>
+          </Col>
+        </Row>
+      </Container>
+
+      <div className='justify-content-center dress-code-title imperial-script-regular mt-5 mb-5'>
+        Confirmanos tu asistencia
+      </div>
+
+      <Container className='px-4'>
+
+
+        <Row className="justify-content-start">
+          <Col xs={6}><h1 className='imperial-script-regular text-end'>L</h1></Col>
+        </Row>
+        <Row className="justify-content-center">
+          <Col xs="auto"><h2 className='mea-culpa-regular text-center'>- & -</h2></Col>
+        </Row>
+        <Row className="justify-content-end pb-5">
+          <Col xs={6}><h1 className='imperial-script-regular text-start'>E</h1></Col>
+        </Row>
+
+        <Row className="justify-content-center">
+          <Col xs="auto" className='justify-content-center'>
+            <Button className="wedding-btn shadow" onClick={() => { window.open('https://maps.app.goo.gl/2iieVtKoAbpxtpTi9') }}>Confirmar</Button>
+          </Col>
+        </Row>
+        {/* <Row className='pt-5'>
+          <Col xs={12} className='justify-content-center'>
+            <h2 className='text-center imperial-script-regular'>
+              ¡Muchas gracias!
+            </h2>
+          </Col>
+        </Row> */}
+      </Container>
     </>
   );
 
