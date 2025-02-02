@@ -37,7 +37,7 @@ function App() {
         </Row>
         <Row className="justify-content-end pb-3">
           <Col xs={6}>
-            <div className='imperial-script-regular text-start fs-10 max-h-3 name-container'><div>Edinson</div></div>
+            <div className='imperial-script-regular text-start fs-10 name-container'><div>Edinson</div></div>
           </Col>
         </Row>
 
