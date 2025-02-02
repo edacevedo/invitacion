@@ -225,17 +225,29 @@ function App() {
       <Container className='px-7'>
 
 
-        <Row className="justify-content-start">
-          <Col xs={6}><h1 className='imperial-script-regular text-end'>L</h1></Col>
+        <Row className="justify-content-start pt-1">
+          <Col xs={6}>
+            <div className='imperial-script-regular text-end ft-s-10 max-h-3'>L</div>
+          </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col xs="auto"><h2 className='mea-culpa-regular text-center'>- & -</h2></Col>
+          <Col xs="auto">
+            <div className='mea-culpa-regular text-center ft-s-10 max-h-3'>&</div>
+          </Col>
         </Row>
-        <Row className="justify-content-end pb-5">
-          <Col xs={6}><h1 className='imperial-script-regular text-start'>E</h1></Col>
+        <Row className="justify-content-end pb-3">
+          <Col xs={6}>
+            <div className='imperial-script-regular text-start ft-s-10 name-container'><div>E</div></div>
+          </Col>
         </Row>
 
         <Row className="justify-content-center">
+          <Col xs="auto">
+            <div className='libre-baskerville-regular text-center ft-s-2 max-h-3'>28.06.25</div>
+          </Col>
+        </Row>
+
+        <Row className="justify-content-center mt-3">
           <Col xs="auto" className='justify-content-center'>
             <Button className="wedding-btn shadow" onClick={() => { setShowConfirmModal(true) }}>Confirmar</Button>
           </Col>
