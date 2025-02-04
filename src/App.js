@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 import homeImage from './resources/img/home-image.JPG'
 import welcomeImage from './resources/img/welcome-image.jpeg'
@@ -17,6 +18,19 @@ import ConfirmModal from './components/ConfirmModal';
 
 function App() {
   const [showConfirmModal, setShowConfirmModal] = useState(false)
+
+  const onSubmitConfirmation = (e) => {
+    e.preventDefault()
+    const url = 'https://script.google.com/macros/s/AKfycbw7PWdTSMrB1fO2eBGbnYoK6eMBTQvxSgVeIXPxlDKo28AXdw6rlaYHNL0L1OoUZN29/exec'
+    fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      // mode: 'no-cors',
+      body: (`date=${e.target.name.value}&name=${e.target.name.value}`)
+    }).then(res => res.text()).then(data => {
+      alert(data)
+    }).catch(error => console.log(error))
+  }
 
 
   return (
@@ -249,11 +263,35 @@ function App() {
           </Col>
         </Row>
 
+        <Form onSubmit={onSubmitConfirmation}>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>Ingresa tu nombre</Form.Label>
+            <Form.Select name='name'>
+              <option></option>
+              <option>Martha Ivanna Valencia Arango</option>
+              <option>Hermencia Contreras López</option>
+              <option>Gloria Ines Contreras López</option>
+              <option>Carlos Contreras Contreras</option>
+              <option>Flor de María Lopéz Jaimes</option>
+            </Form.Select>
+          </Form.Group>
+          <Button className="wedding-btn shadow" type='submit'>Confirmar</Button>
+          {/* <Form.Group
+            className="mb-3"
+            controlId="exampleForm.ControlTextarea1"
+          >
+            <Form.Label>Example textarea</Form.Label>
+            <Form.Control as="textarea" rows={3} />
+          </Form.Group> */}
+        </Form>
+
         <Row className="justify-content-center mt-3">
           <Col xs="auto" className='justify-content-center'>
             <Button className="wedding-btn shadow" onClick={() => { setShowConfirmModal(true) }}>Confirmar</Button>
           </Col>
         </Row>
+
+
       </Container>
 
       <ConfirmModal show={showConfirmModal} handleCloseModal={() => { setShowConfirmModal(false) }} />
