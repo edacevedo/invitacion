@@ -152,7 +152,7 @@ p {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-image: linear-gradient(to top, #ffffff, transparent);
+  background-image: linear-gradient(to top, #fcfcfc, transparent);
 }
 
 .container-image-top::after {
@@ -162,7 +162,7 @@ p {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: linear-gradient(to bottom, #ffffff, transparent);
+  background-image: linear-gradient(to bottom, #fcfcfc, transparent);
 }
 
 /* time counter */

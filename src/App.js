@@ -23,10 +23,16 @@ function App() {
     e.preventDefault()
     const url = 'https://script.google.com/macros/s/AKfycbw7PWdTSMrB1fO2eBGbnYoK6eMBTQvxSgVeIXPxlDKo28AXdw6rlaYHNL0L1OoUZN29/exec'
     fetch(url, {
+      redirect: "follow",
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      headers: {
+        'Content-Type': 'application/json' // Tipo de contenido
+      },
       // mode: 'no-cors',
-      body: (`date=${e.target.name.value}&name=${e.target.name.value}`)
+      body: (JSON.stringify({
+        date: new Date(),
+        name: e.target.name.value
+      }))
     }).then(res => res.text()).then(data => {
       alert(data)
     }).catch(error => console.log(error))
@@ -79,7 +85,7 @@ function App() {
         <Row className="justify-content-center pt-1">
           <Col  >
             <p className='text-center libre-baskerville-regular secondary-color'>
-              Comenzamos una nueva aventura y no seria posible
+              Comenzamos una nueva aventura y no sería posible
               celebrar nuestra boda sin la compañía de nuestra
               familia y grandes amigos.
             </p>
@@ -90,7 +96,7 @@ function App() {
           <Col xs="auto" className='justify-content-center'>
             <p className='text-center libre-baskerville-regular secondary-color'>
               ALISTA TU MEJOR PINTA,<br />
-              POR QUE SOLO FALTAN
+              PORQUE SOLO FALTAN
             </p>
           </Col>
         </Row>

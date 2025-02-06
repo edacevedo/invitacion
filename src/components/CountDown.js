@@ -72,22 +72,22 @@ export default function CountDown() {
             <Row className="justify-content-center pb-3 ">
                 <Col xs={2} className='justify-content-center px-0'>
                     <div className='text-center libre-baskerville-regular'>
-                        Dias
+                        dd
                     </div>
                 </Col>
                 <Col xs={2} className='justify-content-center px-0'>
                     <div className='text-center libre-baskerville-regular'>
-                        Horas
+                        hh
                     </div>
                 </Col>
                 <Col xs={2} className='justify-content-center px-0'>
                     <div className='text-center libre-baskerville-regular'>
-                        Minutos
+                        hh
                     </div>
                 </Col>
                 <Col xs={2} className='justify-content-center px-0'>
                     <div className='text-center libre-baskerville-regular'>
-                        Segundos
+                        ss
                     </div>
                 </Col>
             </Row>
