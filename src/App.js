@@ -1,10 +1,10 @@
 import './App.css';
-import React, { useState } from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+// import Form from 'react-bootstrap/Form';
 
 import homeImage from './resources/img/home-image.JPG'
 import welcomeImage from './resources/img/welcome-image.jpeg'
@@ -14,29 +14,12 @@ import menDress from './resources/img/men-dress.png'
 import loveLetter from './resources/img/love-letter.png'
 
 import CountDown from './components/CountDown';
-import ConfirmModal from './components/ConfirmModal';
+// import ConfirmModal from './components/ConfirmModal';
+import ConfirmationForm from './components/ConfirmationForm';
 
 function App() {
-  const [showConfirmModal, setShowConfirmModal] = useState(false)
+  // const [showConfirmModal, setShowConfirmModal] = useState(false)
 
-  const onSubmitConfirmation = (e) => {
-    e.preventDefault()
-    const url = 'https://script.google.com/macros/s/AKfycbw7PWdTSMrB1fO2eBGbnYoK6eMBTQvxSgVeIXPxlDKo28AXdw6rlaYHNL0L1OoUZN29/exec'
-    fetch(url, {
-      redirect: "follow",
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json' // Tipo de contenido
-      },
-      // mode: 'no-cors',
-      body: (JSON.stringify({
-        date: new Date(),
-        name: e.target.name.value
-      }))
-    }).then(res => res.text()).then(data => {
-      alert(data)
-    }).catch(error => console.log(error))
-  }
 
 
   return (
@@ -240,14 +223,15 @@ function App() {
         </Row>
       </Container>
 
-      <div className='justify-content-center dress-code-title imperial-script-regular mt-5 mb-5'>
+      <div className='justify-content-center dress-code-title imperial-script-regular mt-5 mb-3'>
         Confirmanos tu asistencia
       </div>
 
       <Container className='px-7'>
 
 
-        <Row className="justify-content-start pt-1">
+        <ConfirmationForm />
+        <Row className="justify-content-start pt-5">
           <Col xs={6}>
             <div className='imperial-script-regular text-end ft-s-10 max-h-3'>L</div>
           </Col>
@@ -269,38 +253,8 @@ function App() {
           </Col>
         </Row>
 
-        <Form onSubmit={onSubmitConfirmation}>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label>Ingresa tu nombre</Form.Label>
-            <Form.Select name='name'>
-              <option></option>
-              <option>Martha Ivanna Valencia Arango</option>
-              <option>Hermencia Contreras López</option>
-              <option>Gloria Ines Contreras López</option>
-              <option>Carlos Contreras Contreras</option>
-              <option>Flor de María Lopéz Jaimes</option>
-            </Form.Select>
-          </Form.Group>
-          <Button className="wedding-btn shadow" type='submit'>Confirmar</Button>
-          {/* <Form.Group
-            className="mb-3"
-            controlId="exampleForm.ControlTextarea1"
-          >
-            <Form.Label>Example textarea</Form.Label>
-            <Form.Control as="textarea" rows={3} />
-          </Form.Group> */}
-        </Form>
+      </Container >
 
-        <Row className="justify-content-center mt-3">
-          <Col xs="auto" className='justify-content-center'>
-            <Button className="wedding-btn shadow" onClick={() => { setShowConfirmModal(true) }}>Confirmar</Button>
-          </Col>
-        </Row>
-
-
-      </Container>
-
-      <ConfirmModal show={showConfirmModal} handleCloseModal={() => { setShowConfirmModal(false) }} />
     </>
   );
 
