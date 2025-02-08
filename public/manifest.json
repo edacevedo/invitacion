@@ -1,6 +1,6 @@
 {
   "short_name": "L & E",
-  "name": "Luisa & Edinson 28.06.25",
+  "name": "Luisa & Edinson | 28.06.25",
   "icons": [
     {
       "src": "favicon.svg",
@@ -9,7 +9,7 @@
     },
     {
       "src": "favicon.svg",
-      "type": "image/svg",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
