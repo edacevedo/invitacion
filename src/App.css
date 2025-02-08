@@ -166,14 +166,23 @@ p {
 }
 
 /* time counter */
+.count-down-container {
+  /* border: 1px solid #ccc; */
+  gap: 0;
+  padding-bottom: 1em;
+  border-radius: 17%;
+}
 
 .time-counter-square {
-  /* max-width: 4em; */
-  max-height: 3.5em;
+  max-width: 2em;
+  min-width: 2em;
+  max-height: 2em;
+  min-height: 2em;
   margin: auto;
-  /* border-radius: 17%; */
+  /* border: 1px solid #ccc; */
+  border-radius: 17%;
   /* background: var(--main-color); */
-  padding: .7em 0 0 0;
+  padding: .2em;
   font-family: 'Abhaya Libre';
   font-size: 2.5em;
 }

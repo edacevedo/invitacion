@@ -50,24 +50,26 @@ export default function ConfirmationForm() {
 
         <>
             <Row className="justify-content-center mt-5">
-                <Select
+                <Col sm={6}>
+                    <Select
 
-                    isClearable
-                    isSearchable
-                    placeholder={'Ingresa tu nombre'}
-                    defaultValue={selectedOption}
-                    value={selectedOption}
-                    onChange={setSelectedOption}
-                    onInputChange={(value) => {
-                        setInputText(value)
-                    }}
-                    options={
-                        inputText ?
-                            [...options].filter(opt => opt.value.toLocaleLowerCase().includes(inputText.toLocaleLowerCase())) :
-                            []
-                    }
-                    noOptionsMessage={() => 'Encuentra tu reserva.'}
-                />
+                        isClearable
+                        isSearchable
+                        placeholder={'Ingresa tu nombre'}
+                        defaultValue={selectedOption}
+                        value={selectedOption}
+                        onChange={setSelectedOption}
+                        onInputChange={(value) => {
+                            setInputText(value)
+                        }}
+                        options={
+                            inputText ?
+                                [...options].filter(opt => opt.value.toLocaleLowerCase().includes(inputText.toLocaleLowerCase())) :
+                                []
+                        }
+                        noOptionsMessage={() => 'Encuentra tu reserva.'}
+                    />
+                </Col>
             </Row>
             <Row className="justify-content-center mt-3">
                 <Col xs="auto" className='justify-content-center'>

@@ -158,15 +158,15 @@ function App() {
       <Container className='px-7'>
 
         <Row className="justify-content-center align-items-center">
-          <Col xs={3} className='justify-content-center'>
+          <Col xs={3} sm={2} className='justify-content-center'>
             <img className="w-100" src={menDress} alt="" />
             <div className='text-center imperial-script-regular ft-s-2'>Caballeros</div>
           </Col>
-          <Col xs={3} className='justify-content-center'>
+          <Col xs={3} sm={2} className='justify-content-center'>
             <img className="w-100" src={womenDress} alt="" />
             <div className='text-center imperial-script-regular ft-s-2'>Damas</div>
           </Col>
-          <Col xs={6} className='justify-content-center'>
+          <Col xs={6} sm={8} className='justify-content-center'>
             <p className='text-center libre-baskerville-regular secondary-color'>
               Nos encantaría verte formal, <br />
               por eso ellos traje deberán
@@ -206,15 +206,15 @@ function App() {
         </Row>
 
         <Row className="justify-content-center align-items-center mt-3">
-          <Col xs={8} className='justify-content-center'>
-            <p className='text-center secondary-color'>
+          <Col xs={6} sm={10} className='justify-content-center'>
+            <p className='text-center secondary-color m-0'>
               Ya tenemos pensado el Ferrari, la
               mansión y el velero.
               Ahora lo único que nos falta es el
               dinero...
             </p>
           </Col>
-          <Col xs={4} className='justify-content-center'>
+          <Col xs={6} sm={2} className='justify-content-center'>
             <img className="w-50 letter-img" src={loveLetter} alt="" />
             <div className='text-center imperial-script-regular ft-s-2'>
               Lluvia de sobres
