@@ -29,6 +29,10 @@
   font-size: 1.6em;
 }
 
+.ft-s-7 {
+  font-size: 2.5em !important;
+}
+
 .ft-s-10 {
   font-size: 3.5em !important;
 }
@@ -210,8 +214,9 @@ p {
 }
 
 /* Button */
-.wedding-btn {
-  background-color: var(--main-color) !important;
+.wedding-btn,
+.modal .modal-content .modal-footer .wedding-btn {
+  background-color: #DFE3C8 !important;
   color: var(--font-main-color) !important;
   font-family: "Abhaya Libre", serif !important;
   font-weight: 500 !important;

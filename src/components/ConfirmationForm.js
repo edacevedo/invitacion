@@ -90,11 +90,27 @@ export default function ConfirmationForm() {
 
             <Modal show={showModal} onHide={handleCloseModal} centered>
                 <Modal.Header closeButton>
-                    <Modal.Title>Asistencia confirmada</Modal.Title>
+                    <Modal.Title className='imperial-script-regular  ft-s-7'>Asistencia confirmada</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>{`${guessName}, hemos confirmado tu asistencia, gracias por decidir acompañarnos`}</Modal.Body>
+                <Modal.Body>
+                    <>
+                        <div className='ft-s-7 imperial-script-regular text-center'>
+                            {`${guessName}`}
+                        </div>
+                        <br />
+                        <p className='text-center bold'>
+                            {` Valoramos tu presencia y estamos muy felices de que hayas decidido acompañarnos en nuestra boda.`}
+                        </p>
+                        <p className='text-center'>
+                            {`¡Nos vemos muy pronto!`}
+                        </p>
+                        <p className='text-center imperial-script-regular ft-s-10'>
+                            {`Luisa   &  Edinson`}
+                        </p>
+                    </>
+                </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleCloseModal}>
+                    <Button className='wedding-btn shadow' onClick={handleCloseModal}>
                         Cerrar
                     </Button>
                     {/* <Button variant="primary" onClick={handleClose}>
