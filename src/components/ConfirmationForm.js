@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/esm/Col';
 import Row from 'react-bootstrap/esm/Row';
 import Select from 'react-select';
 import Modal from 'react-bootstrap/esm/Modal';
+import Spinner from 'react-bootstrap/Spinner'
 
 export default function ConfirmationForm() {
     const [selectedOption, setSelectedOption] = useState(null);
@@ -17,6 +18,7 @@ export default function ConfirmationForm() {
         { value: 'Carlos Contreras Contreras', label: 'Carlos Contreras Contreras' },
     ];
     const [showModal, setShowModal] = useState(false);
+    const [showSpinner, setShowSpinner] = useState(false)
 
     const handleCloseModal = () => {
         setShowModal(false)
@@ -27,6 +29,7 @@ export default function ConfirmationForm() {
         var name = `${selectedOption['value']}`
         setGuessName(name)
         setSelectedOption(null)
+        setShowSpinner(true)
         axios.get(
             'https://script.google.com/macros/s/AKfycbyZSJ4GcQLRl88ysB4KtWYfk6Wg5TTdPz-VczWDQU9B0L7nUe4whvtjwMIVm0YnxbyY/exec',
             {
@@ -37,10 +40,10 @@ export default function ConfirmationForm() {
             }
         ).then(resp => {
             console.log(resp.data);
-
             setShowModal(true)
         }).finally(() => {
             setSelectedOption(null)
+            setShowSpinner(false)
         });
     }
     return (
@@ -68,12 +71,18 @@ export default function ConfirmationForm() {
             </Row>
             <Row className="justify-content-center mt-3">
                 <Col xs="auto" className='justify-content-center'>
-                    <Button
-                        className="wedding-btn shadow"
-                        disabled={!selectedOption}
-                        onClick={() => { onSubmitConfirmation() }}>
-                        Confirmar
-                    </Button>
+                    {
+                        showSpinner ?
+                            <Spinner animation="border" role="status">
+                                <span className="visually-hidden">Loading...</span>
+                            </Spinner> :
+                            <Button
+                                className="wedding-btn shadow"
+                                disabled={!selectedOption}
+                                onClick={() => { onSubmitConfirmation() }}>
+                                Confirmar
+                            </Button>
+                    }
                 </Col>
             </Row>
 

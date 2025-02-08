@@ -168,7 +168,7 @@ p {
 /* time counter */
 
 .time-counter-square {
-  max-width: 4em;
+  /* max-width: 4em; */
   max-height: 3.5em;
   margin: auto;
   /* border-radius: 17%; */
