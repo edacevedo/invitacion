@@ -49,13 +49,18 @@ export default function ConfirmationForm() {
     return (
 
         <>
-            <Row className="justify-content-center mt-5">
+            <Row className='mt-5'>
+                <Col>
+                    <p className='text-center secondary-color'>Tenemos 1 reserva a tu nombre, encuentrala ingresando tu nombre. </p>
+                </Col>
+            </Row>
+            <Row className="justify-content-center mt-1">
                 <Col sm={6}>
                     <Select
 
                         isClearable
                         isSearchable
-                        placeholder={'Ingresa tu nombre'}
+                        placeholder={'Ingresa tu nombre aquí'}
                         defaultValue={selectedOption}
                         value={selectedOption}
                         onChange={setSelectedOption}
