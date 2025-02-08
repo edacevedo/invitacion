@@ -4,28 +4,43 @@ import Button from 'react-bootstrap/esm/Button';
 import Col from 'react-bootstrap/esm/Col';
 import Row from 'react-bootstrap/esm/Row';
 import Select from 'react-select';
-import { Alert } from 'bootstrap';
+import Modal from 'react-bootstrap/esm/Modal';
 
 export default function ConfirmationForm() {
     const [selectedOption, setSelectedOption] = useState(null);
+    const [inputText, setInputText] = useState('')
+    const [guessName, setGuessName] = useState('')
     const options = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' },
-        { value: 'Luisa María Roser Valencia', label: 'Luisa María Roser Valencia' },
+        { value: 'Martha Ivana Valencia Arango', label: 'Martha Ivana Valencia Arango' },
+        { value: 'Flor de María Lopéz Jaimes', label: 'Flor de María Lopéz Jaimes' },
+        { value: 'Hernán Valencia García', label: 'Hernán Valencia García' },
+        { value: 'Carlos Contreras Contreras', label: 'Carlos Contreras Contreras' },
     ];
+    const [showModal, setShowModal] = useState(false);
+
+    const handleCloseModal = () => {
+        setShowModal(false)
+        setGuessName('')
+    };
 
     const onSubmitConfirmation = () => {
+        var name = `${selectedOption['value']}`
+        setGuessName(name)
+        setSelectedOption(null)
         axios.get(
             'https://script.google.com/macros/s/AKfycbyZSJ4GcQLRl88ysB4KtWYfk6Wg5TTdPz-VczWDQU9B0L7nUe4whvtjwMIVm0YnxbyY/exec',
             {
                 params: {
                     date: new Date(),
-                    name: selectedOption['value']
+                    name: name
                 }
             }
         ).then(resp => {
-            Alert(resp.data)
+            console.log(resp.data);
+
+            setShowModal(true)
+        }).finally(() => {
+            setSelectedOption(null)
         });
     }
     return (
@@ -33,12 +48,22 @@ export default function ConfirmationForm() {
         <>
             <Row className="justify-content-center mt-5">
                 <Select
+
                     isClearable
                     isSearchable
                     placeholder={'Ingresa tu nombre'}
                     defaultValue={selectedOption}
+                    value={selectedOption}
                     onChange={setSelectedOption}
-                    options={options}
+                    onInputChange={(value) => {
+                        setInputText(value)
+                    }}
+                    options={
+                        inputText ?
+                            [...options].filter(opt => opt.value.toLocaleLowerCase().includes(inputText.toLocaleLowerCase())) :
+                            []
+                    }
+                    noOptionsMessage={() => 'Encuentra tu reserva.'}
                 />
             </Row>
             <Row className="justify-content-center mt-3">
@@ -51,6 +76,21 @@ export default function ConfirmationForm() {
                     </Button>
                 </Col>
             </Row>
+
+            <Modal show={showModal} onHide={handleCloseModal} centered>
+                <Modal.Header closeButton>
+                    <Modal.Title>Asistencia confirmada</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>{`${guessName}, hemos confirmado tu asistencia, gracias por decidir acompañarnos`}</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleCloseModal}>
+                        Cerrar
+                    </Button>
+                    {/* <Button variant="primary" onClick={handleClose}>
+                        Save Changes
+                    </Button> */}
+                </Modal.Footer>
+            </Modal>
         </>
 
     )

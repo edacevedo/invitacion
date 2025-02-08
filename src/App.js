@@ -168,7 +168,7 @@ function App() {
           </Col>
           <Col xs={6} className='justify-content-center'>
             <p className='text-center libre-baskerville-regular secondary-color'>
-              Nos encantará verte formal, <br />
+              Nos encantaría verte formal, <br />
               por eso ellos traje deberán
               usar y ellas vestidos largos
               llevarán...
