@@ -177,7 +177,6 @@ p {
 
 /* time counter */
 .count-down-container {
-  /* border: 1px solid #ccc; */
   gap: 0;
   padding-bottom: 1em;
   border-radius: 17%;
@@ -189,17 +188,12 @@ p {
   max-height: 2em;
   min-height: 2em;
   margin: auto;
-  /* border: 1px solid #ccc; */
   border-radius: 17%;
-  /* background: var(--main-color); */
   padding: .2em;
   font-family: 'Abhaya Libre';
   font-size: 2.5em;
 }
 
-/* .time-counter-square::after {
-  content: ':';
-} */
 
 /* Date */
 .date-weekday,
@@ -231,6 +225,10 @@ p {
   border: none !important;
   padding: .7em 1.4em !important;
   border-radius: 2em !important;
+}
+
+.modal .modal-content {
+  background-color: #fcfcfc !important;
 }
 
 .dress-code-title {
