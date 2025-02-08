@@ -51,7 +51,7 @@ export default function ConfirmationForm() {
         <>
             <Row className='mt-5'>
                 <Col>
-                    <p className='text-center secondary-color'>Tenemos 1 reserva a tu nombre, encuentrala ingresando tu nombre. </p>
+                    <p className='text-center secondary-color'>Tenemos 1 reserva a tu nombre, encuéntrala ingresando tu nombre. </p>
                 </Col>
             </Row>
             <Row className="justify-content-center mt-1">
