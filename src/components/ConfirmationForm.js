@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Button from 'react-bootstrap/esm/Button';
 import Col from 'react-bootstrap/esm/Col';
@@ -6,19 +6,38 @@ import Row from 'react-bootstrap/esm/Row';
 import Select from 'react-select';
 import Modal from 'react-bootstrap/esm/Modal';
 import Spinner from 'react-bootstrap/Spinner'
+import Logo from './Logo';
+import guessJSON from './../domain/guess.json'
 
 export default function ConfirmationForm() {
     const [selectedOption, setSelectedOption] = useState(null);
     const [inputText, setInputText] = useState('')
     const [guessName, setGuessName] = useState('')
-    const options = [
-        { value: 'Martha Ivana Valencia Arango', label: 'Martha Ivana Valencia Arango' },
-        { value: 'Flor de María Lopéz Jaimes', label: 'Flor de María Lopéz Jaimes' },
-        { value: 'Hernán Valencia García', label: 'Hernán Valencia García' },
-        { value: 'Carlos Contreras Contreras', label: 'Carlos Contreras Contreras' },
-    ];
+    const [guessList, setGuessList] = useState([])
     const [showModal, setShowModal] = useState(false);
     const [showSpinner, setShowSpinner] = useState(false)
+
+
+    // const getData = () => {
+    //     fetch('./guess.json'
+    //         , {
+    //             headers: {
+    //                 'Content-Type': 'application/json',
+    //                 'Accept': 'application/json'
+    //             }
+    //         }
+    //     )
+    //         .then(function (response) {
+    //             console.log(response)
+    //             return response.json();
+    //         })
+    // }
+
+    useEffect(() => {
+        console.log(guessJSON.guessList);
+
+        setGuessList(guessJSON.guessList)
+    }, [])
 
     const handleCloseModal = () => {
         setShowModal(false)
@@ -51,7 +70,7 @@ export default function ConfirmationForm() {
         <>
             <Row className='mt-5'>
                 <Col>
-                    <p className='text-center secondary-color'>Tenemos 1 reserva a tu nombre, encuéntrala ingresando tu nombre. </p>
+                    <p className='text-center secondary-color'>Tenemos <span className='bold'>1</span> reserva a tu nombre, encuéntrala ingresando tu nombre. </p>
                 </Col>
             </Row>
             <Row className="justify-content-center mt-1">
@@ -69,7 +88,7 @@ export default function ConfirmationForm() {
                         }}
                         options={
                             inputText ?
-                                [...options].filter(opt => opt.value.toLocaleLowerCase().includes(inputText.toLocaleLowerCase())) :
+                                [...guessList].filter(opt => opt.value.toLocaleLowerCase().includes(inputText.toLocaleLowerCase())) :
                                 []
                         }
                         noOptionsMessage={() => 'Encuentra tu reserva.'}
@@ -81,7 +100,7 @@ export default function ConfirmationForm() {
                     {
                         showSpinner ?
                             <Spinner animation="border" role="status">
-                                <span className="visually-hidden">Loading...</span>
+                                <span className="visually-hidden">Confirmando...</span>
                             </Spinner> :
                             <Button
                                 className="wedding-btn shadow"
@@ -95,7 +114,7 @@ export default function ConfirmationForm() {
 
             <Modal show={showModal} onHide={handleCloseModal} centered>
                 <Modal.Header closeButton>
-                    <Modal.Title className='imperial-script-regular  ft-s-7'>Asistencia confirmada</Modal.Title>
+                    <Modal.Title className='abhaya-libre-medium  ft-s-2'>Asistencia confirmada</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <>
@@ -106,21 +125,16 @@ export default function ConfirmationForm() {
                         <p className='text-center secondary-color'>
                             {` Valoramos tu presencia y estamos muy felices de que hayas decidido acompañarnos en nuestra boda.`}
                         </p>
-                        <p className='text-center'>
+                        <p className='text-center secondary-color'>
                             {`¡Nos vemos muy pronto!`}
                         </p>
-                        <p className='text-center imperial-script-regular ft-s-10'>
-                            {`Luisa   &  Edinson`}
-                        </p>
+                        <Logo />
                     </>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button className='wedding-btn shadow' onClick={handleCloseModal}>
                         Cerrar
                     </Button>
-                    {/* <Button variant="primary" onClick={handleClose}>
-                        Save Changes
-                    </Button> */}
                 </Modal.Footer>
             </Modal>
         </>

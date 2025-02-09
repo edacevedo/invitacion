@@ -21,7 +21,8 @@ body {
 }
 
 .secondary-color {
-  color: var(--font-second-color);
+  /* color:  var(--font-second-color); */
+  color: #325343;
 }
 
 .px-7 {
@@ -244,4 +245,8 @@ p {
 
 .letter-img {
   margin: 0 25%;
+}
+
+.bold {
+  font-weight: bold;
 }

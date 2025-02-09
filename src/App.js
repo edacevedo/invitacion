@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-// import Form from 'react-bootstrap/Form';
 
 import homeImage from './resources/img/home-image.JPG'
 import welcomeImage from './resources/img/welcome-image.jpeg'
@@ -14,14 +13,10 @@ import menDress from './resources/img/men-dress.png'
 import loveLetter from './resources/img/love-letter.png'
 
 import CountDown from './components/CountDown';
-// import ConfirmModal from './components/ConfirmModal';
 import ConfirmationForm from './components/ConfirmationForm';
+import Logo from './components/Logo';
 
 function App() {
-  // const [showConfirmModal, setShowConfirmModal] = useState(false)
-
-
-
   return (
     <>
       <div className="container-image-top">
@@ -231,7 +226,7 @@ function App() {
 
 
         <ConfirmationForm />
-        <Row className="justify-content-start pt-5">
+        {/* <Row className="justify-content-start pt-5">
           <Col xs={6}>
             <div className='imperial-script-regular text-end ft-s-10 max-h-3'>L</div>
           </Col>
@@ -245,7 +240,8 @@ function App() {
           <Col xs={6}>
             <div className='imperial-script-regular text-start ft-s-10 name-container'><div>E</div></div>
           </Col>
-        </Row>
+        </Row> */}
+        <Logo />
 
         <Row className="justify-content-center">
           <Col xs="auto">
