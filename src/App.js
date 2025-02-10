@@ -74,7 +74,7 @@ function App() {
           <Col xs="auto" className='justify-content-center'>
             <p className='text-center libre-baskerville-regular secondary-color'>
               ALISTA TU MEJOR PINTA,<br />
-              PORQUE SOLO FALTAN
+              QUE SÓLO FALTAN...
             </p>
           </Col>
         </Row>
@@ -117,7 +117,7 @@ function App() {
         <Row className="justify-content-center">
           <Col xs="auto" className='justify-content-center'>
             <p className='text-center libre-baskerville-regular'>
-              Hacienda La unión, <br />
+              Hacienda La Unión, <br />
               Jamundí, Valle del Cauca
             </p>
           </Col>
@@ -125,7 +125,7 @@ function App() {
 
         <Row className="justify-content-center">
           <Col xs="auto" className='justify-content-center'>
-            <h3 className='abhaya-libre-regular'>5:00 pm</h3>
+            <h3 className='abhaya-libre-regular'>5:00 p.m.</h3>
           </Col>
         </Row>
 
@@ -163,7 +163,7 @@ function App() {
           </Col>
           <Col xs={6} sm={8} className='justify-content-center'>
             <p className='text-center libre-baskerville-regular secondary-color'>
-              Nos encantaría verte formal, <br />
+              Nos encantará verte formal, <br />
               por eso ellos traje deberán
               usar y ellas vestidos largos
               llevarán...
@@ -219,7 +219,7 @@ function App() {
       </Container>
 
       <div className='justify-content-center dress-code-title imperial-script-regular mt-5 mb-3'>
-        Confirmanos tu asistencia
+        Confírmanos tu asistencia
       </div>
 
       <Container className='px-7'>

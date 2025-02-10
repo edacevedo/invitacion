@@ -123,7 +123,7 @@ export default function ConfirmationForm() {
                         </div>
                         <br />
                         <p className='text-center secondary-color'>
-                            {` Valoramos tu presencia y estamos muy felices de que hayas decidido acompañarnos en nuestra boda.`}
+                            {` Valoramos mucho tu presencia y estamos muy felices de que hayas decidido acompañarnos en nuestra boda.`}
                         </p>
                         <p className='text-center secondary-color'>
                             {`¡Nos vemos muy pronto!`}
