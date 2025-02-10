@@ -17,25 +17,7 @@ export default function ConfirmationForm() {
     const [showModal, setShowModal] = useState(false);
     const [showSpinner, setShowSpinner] = useState(false)
 
-
-    // const getData = () => {
-    //     fetch('./guess.json'
-    //         , {
-    //             headers: {
-    //                 'Content-Type': 'application/json',
-    //                 'Accept': 'application/json'
-    //             }
-    //         }
-    //     )
-    //         .then(function (response) {
-    //             console.log(response)
-    //             return response.json();
-    //         })
-    // }
-
     useEffect(() => {
-        console.log(guessJSON.guessList);
-
         setGuessList(guessJSON.guessList)
     }, [])
 
