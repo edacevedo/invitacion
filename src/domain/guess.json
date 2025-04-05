@@ -389,12 +389,8 @@
             "value": "Luz Almeida"
         },
         {
-            "label": "Sharo Rosero",
-            "value": "Sharo Rosero"
-        },
-        {
-            "label": "Valentina Guerrero",
-            "value": "Valentina Guerrero"
+            "label": "Valentina Guerrero Rosero",
+            "value": "Valentina Guerrero Rosero"
         },
         {
             "label": "Anthony Leandro Muñoz",
@@ -431,6 +427,10 @@
         {
             "label": "Antonella Gutierrez Cano",
             "value": "Antonella Gutierrez Cano"
+        },
+        {
+            "label": "Valentina Urbano Valencia",
+            "value": "Valentina Urbano Valencia"
         }
     ]
 }
