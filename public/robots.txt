@@ -1,3 +1,52 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+Hace constar que el(la) señor(a) EDINSON ACEVEDO CONTRERAS, con número de identificación 1.090.457.174, labora en Open Intelligence S.A.S. con NIT 900401714-6, desde el 27 de Noviembre de 2017 desempeñando actualmente el cargo de FRONT-END SOFTWARE DEVELOPER. 
+ 
+PRINCIPALES FUNCIONES: 
+ 
+Construir requerimientos técnicos y funcionales cumpliendo los estándares de desarrollo y procedimientos definidos. 
+Hacer las pruebas de unidad a los requerimientos construidos. 
+Hacer las entregas de los requerimientos construidos. 
+Ejecutar los procedimientos definidos para la construcción de software. 
+Cumplir con el reglamento interno de trabajo. 
+Atender las actividades designadas por la ruta de apoyo superior.
+
+**********************************************************************************************************
+
+Eres un ingeniero de datos y debes encontrar el patrón, te voy a indicar una serie de registros que consisten en cinco números del 1 al 43 y un último número del 1 al 16, tu tarea es encontrar el siguiente registro basado en los registros dados:
+01 - 15 - 20 - 23 - 31 - 10
+04 - 05 - 19 - 28 - 43 - 05
+11 - 26 - 31 - 35 - 43 - 06
+05 - 11 - 18 - 31 - 32 - 09
+03 - 04 - 13 - 38 - 39 - 01
+07 - 08 - 09 - 19 - 26 - 04
+01 - 07 - 22 - 40 - 41 - 03
+18 - 25 - 40 - 41 - 43 - 13
+03 - 09 - 27 - 36 - 37 - 01
+03 - 09 - 21 - 27 - 39 - 03
+08 - 12 - 22 - 26 - 28 - 01
+01 - 18 - 27 - 40 - 43 - 01
+17 - 21 - 25 - 26 - 39 - 15
+09 - 16 - 32 - 33 - 40 - 12
+01 - 17 - 33 - 42 - 43 - 12
+11 - 17 - 18 - 26 - 42 - 13
+03 - 04 - 17 - 21 - 25 - 04
+07 - 28 - 29 - 33 - 43 - 02
+03 - 13 - 19 - 34 - 43 - 12
+14 - 21 - 28 - 30 - 38 - 14
+08 - 15 - 17 - 24 - 42 - 11
+01 - 16 - 30 - 39 - 41 - 15
+02 - 09 - 10 - 39 - 43 - 14
+05 - 11 - 14 - 37 - 38 - 14
+02 - 04 - 05 - 28 - 33 - 12
+12 - 20 - 26 - 34 - 38 - 01
+01 - 16 - 19 - 25 - 31 - 06
+12 - 15 - 28 - 34 - 37 - 01
+14 - 19 - 30 - 38 - 41 - 10
+07 - 16 - 32 - 33 - 43 - 01
+02 - 28 - 31 - 32 - 34 - 06
+18 - 24 - 27 - 37 - 43 - 11
+10 - 13 - 18 - 24 - 26 - 09
+17 - 28 - 33 - 39 - 43 - 06
